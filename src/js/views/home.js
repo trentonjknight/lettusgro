@@ -4,10 +4,12 @@ import "../../styles/home.scss";
 
 export const Home = () => (
 	<div className="text-center mt-1">
-		<h1>Register for free!</h1>
-		<h2> Grow with us :)</h2>
+		<h1>L E T T U S</h1>
+		<h2>Register for free!</h2>
+		<h3> Grow with us :)</h3>
 		<p>
-			<img src={sprout} style={{ height: "250px", width: "250px" }} />
+			<img src={sprout} style={{ height: "350px", width: "350px" }} />
 		</p>
+		<button className="btn btn-success mb-3">Register</button>
 	</div>
 );

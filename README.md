@@ -1,6 +1,5 @@
-# WebApp boilerplate with React and Cloud 9
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello-webapp.git)
+# 4GeeksAcademy Final Project
+#Lettus Plant Grow System
 
 ### Requirements:
 - Make sure you are using node version 8
@@ -16,12 +15,6 @@ Start the webpack server with live reload:
 - `$ npm run start` for windows, mac, linux or Gitpod.
 - `$ npm run c9` for Cloud 9 Users.
 
-### Styles
-You can update the `styles/index.scss` or create new `.scss` files inside `styles/` and import them into your current scss or js files depending on your needs.
-
-### Components
-Add more files into your `./src/js/components` or styles folder as you need them and import them into your current files as needed.
-
 **Note (New changes)**: Components have been converted into functions to support the use of hooks:
 * Instead of a class component, we're using a `const` function.
 * Class `constructor` and `state` have been replaced by `useState()` hooks.
@@ -29,15 +22,6 @@ Add more files into your `./src/js/components` or styles folder as you need them
 * `Actions` and `Store` still work the same way.
 
 ```jsx
-// Previous "Class Oriented"
-export class Demo extends React.Component {
-	constructor(props) {
-		super(props);
-
-		this.state = getState('code here');
-	}
-}
-
 // New "Functional Oriented"
 export const Demo = () => (
 	const [state, setState] = getState('code here'); //using the state (if needed)
