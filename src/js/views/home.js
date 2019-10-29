@@ -1,15 +1,13 @@
 import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
+import sprout from "../../img/sprout.png";
 import "../../styles/home.scss";
 
 export const Home = () => (
-	<div className="text-center mt-5">
-		<h1>Hello Rigo!</h1>
+	<div className="text-center mt-1">
+		<h1>Register for free!</h1>
+		<h2> Grow with us :)</h2>
 		<p>
-			<img src={rigoImage} />
+			<img src={sprout} style={{ height: "250px", width: "250px" }} />
 		</p>
-		<a href="#" className="btn btn-success">
-			If you see this green button, bootstrap is working
-		</a>
 	</div>
 );
