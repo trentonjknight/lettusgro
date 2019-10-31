@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-success mb-3">
+		<nav className=" navbar fixed-top navbar-light bg-success mb-3">
 			<div>
 				<Link to="/">
 					<span className="navbar-brand mb-0 h1 text-light">L E T T U S</span>
 				</Link>
 				<Link to="/plants">
-					<button className=" btn btn-lg btn-light text-success">Browse Plants</button>
+					<button className=" btn btn-light text-success">Browse Plants</button>
 				</Link>
 			</div>
 			<div className="ml-auto">
 				<Link to="/login">
-					<button className=" btn btn-lg btn-light text-success">Login</button>
+					<button className=" btn btn-light text-success">Login</button>
 				</Link>
 			</div>
 		</nav>

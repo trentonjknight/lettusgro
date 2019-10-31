@@ -23,7 +23,7 @@ export const Demo = () => {
 					<input type="password" placeholder="Enter password" className="form-control" />
 				</div>
 				<Link to="/">
-					<button className="btn btn-primary justify-content-center">Back home</button>
+					<button className="btn btn-success mx-auto">Back home</button>
 				</Link>
 			</div>
 		</>
