@@ -4,6 +4,8 @@ import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
 import { Demo } from "./views/login";
+import { Plants } from "./views/plants";
+import { Register } from "./views/register";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
@@ -24,9 +26,12 @@ export const Layout = () => {
 					<Switch>
 						<Route exact path="/" component={Home} />
 						<Route path="/login" component={Demo} />
+						<Route path="/plants" component={Plants} />
+						<Route path="/register" component={Register} />
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
+					<Plants />
 					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>

@@ -9,12 +9,12 @@ export const Navbar = () => {
 					<span className="navbar-brand mb-0 h1 text-light">L E T T U S</span>
 				</Link>
 				<Link to="/plants">
-					<button className=" btn btn-large btn-primary">Browse Plants</button>
+					<button className=" btn btn-lg btn-light text-success">Browse Plants</button>
 				</Link>
 			</div>
 			<div className="ml-auto">
 				<Link to="/login">
-					<button className=" btn btn-large btn-primary">Login</button>
+					<button className=" btn btn-lg btn-light text-success">Login</button>
 				</Link>
 			</div>
 		</nav>
