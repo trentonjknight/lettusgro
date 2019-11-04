@@ -11,7 +11,9 @@ export const Navbar = () => {
 				<Link to="/plants">
 					<button className=" btn btn-light text-success m-1">Browse Plants</button>
 				</Link>
-				<button className=" btn btn-light text-success m-1">Our Mission</button>
+				<Link to="/about">
+					<button className=" btn btn-light text-success m-1">Our Mission</button>
+				</Link>
 			</div>
 			<div className="ml-auto">
 				<Link to="/login">
