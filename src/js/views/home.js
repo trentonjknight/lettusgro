@@ -12,9 +12,9 @@ export const Home = () => (
 		<Link to="/register">
 			<button className="btn btn-success btn-lg mb-3">Register</button>
 		</Link>
-		{/* <p>
+		{/*<p>
 			<img className="vine" src={vine} style={{ height: "100px", width: "100px" }} />
-		</p> */}
+		</p>*/}
 		<p>
 			<img src={sprout} style={{ height: "350px", width: "350px" }} />
 		</p>
