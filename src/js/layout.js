@@ -5,7 +5,7 @@ import ScrollToTop from "./component/scrollToTop";
 import { Home } from "./views/home";
 import { Demo } from "./views/login";
 import { Plants } from "./views/plants";
-import { Register } from "./views/register";
+import Register from "./views/register";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
