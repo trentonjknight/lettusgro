@@ -5,7 +5,7 @@ import "../../styles/home.scss";
 import { Link } from "react-router-dom";
 
 export const Home = () => (
-	<div className="text-center pt-5 mt-5">
+	<div className="text-center pt-5 mt-1">
 		<h1>L E T T U S</h1>
 		<h3>Register for free!</h3>
 		<h4> Let us grow with you :)</h4>

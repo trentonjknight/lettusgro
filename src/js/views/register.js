@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Link, useHistory } from "react-router-dom";
-import { useToast, Button } from "@chakra-ui/core";
+import { Link } from "react-router-dom";
 
 const Register = () => {
 	const inputFullname = useRef(null);
@@ -12,8 +11,6 @@ const Register = () => {
 	const [phone, setPhone] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
-
-	const toast = useToast();
 
 	const registerFormHandler = () => {
 		if (!fullname) {

@@ -12,12 +12,15 @@ export const Plants = () => {
 		<>
 			<hr />
 			<h1 className="mx-auto">What would you like to grow?</h1>
+
 			<div className="card-deck m-3 text-center">
 				<div className="card border-success">
-					<img src={cilantro} className="card-img-top" alt="..." />
-					<div className="card-body">
-						<h3 className="card-title">Cilantro</h3>
-					</div>
+					<Link to="/cilantro">
+						<img src={cilantro} className="card-img-top" alt="..." />
+						<div className="card-body">
+							<h3 className="card-title">Cilantro</h3>
+						</div>
+					</Link>
 				</div>
 				<div className="card border-success">
 					<img src={carrot} className="card-img-top" alt="..." />
