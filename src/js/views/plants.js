@@ -11,7 +11,7 @@ export const Plants = () => {
 	return (
 		<>
 			<hr />
-			<h1 className="mx-auto">What would you like to grow?</h1>
+			<h1 className="mx-auto mt-5">What would you like to grow?</h1>
 
 			<div className="card-deck m-3 text-center">
 				<div className="card border-success">

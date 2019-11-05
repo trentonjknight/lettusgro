@@ -5,8 +5,12 @@ import "../../styles/home.scss";
 import { Link } from "react-router-dom";
 
 export const Home = () => (
-	<div className="text-center pt-5 mt-1">
+	<div className="text-center pt-5 mt-3">
 		<h1>L E T T U S</h1>
+		<h4>
+			A plant growth management application employing sensors and automation to take the difficulty out of
+			agriculture.
+		</h4>
 		<h3>Register for free!</h3>
 		<h4> Let us grow with you :)</h4>
 		<Link to="/register">
