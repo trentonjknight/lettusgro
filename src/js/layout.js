@@ -8,6 +8,7 @@ import { Plants } from "./views/plants";
 import Cilantro from "./views/cilantro";
 import Register from "./views/register";
 import { Single } from "./views/single";
+import { About } from "./views/about";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -31,6 +32,7 @@ export const Layout = () => {
 						<Route path="/cilantro" component={Cilantro} />
 						<Route path="/register" component={Register} />
 						<Route path="/single/:theid" component={Single} />
+						<Route path="/about" component={About} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 

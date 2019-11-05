@@ -1,6 +1,19 @@
+ @import url('https://fonts.googleapis.com/css?family=Caveat:400,700|Pacifico|Sacramento&display=swap');
+
+
 /*
     General Styles
 */
 .card{
     border:3px solid rgb(3, 182, 3)!important;
+}
+
+.about{
+
+}
+
+.pgtitles{
+    font-family: 'Caveat', 'Pacifico', 'Sacramento', Helvetica, sans-serif, bold;
+
+    // text-decoration: underline;
 }
