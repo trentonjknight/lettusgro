@@ -37,23 +37,6 @@ const Register = () => {
 				email: email,
 				password: password
 			});
-			fetch("http://0.0.0.0:3000/register", {
-				method: "POST",
-				body: userRegisterData,
-				headers: {
-					"Content-Type": "application/json"
-				}
-			})
-				.then(res => res.json())
-				.then(res => {
-					alert("REGISTER SUCCESSFUL");
-					//console.log(res);
-					history.push("/login");
-				})
-				.catch(error => {
-					//console.log("Error:", error);
-					alert("error", JSON.stringify(error));
-				});
 		}
 	};
 

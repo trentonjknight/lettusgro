@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
 function Cilantro() {
 	return (
@@ -33,14 +34,25 @@ function Cilantro() {
 			<div className="text-align-left m-2">
 				<ul>
 					<b>Vital statistics from Trefle.io API:</b>
-					<li>Days to Maturity:</li>
-					<li>Precipitation Min - Max</li>
-					<li>Temperature Min - Max</li>
-					<li>Humidity Min - Max</li>
+					<li>
+						Days to Maturity:
+						{}
+					</li>
+					<li>
+						Precipitation Min {} - Max {}
+					</li>
+					<li>
+						Temperature Min {} - Max {}
+					</li>
+					<li>
+						Humidity Min {} - Max {}
+					</li>
 					<li>Light Cycle </li>
-					<li>pH Min - Max</li>
-					<li>Palatable for Humans</li>
-					<li>Mature Height</li>
+					<li>
+						pH Min {} - Max {}{" "}
+					</li>
+					<li>Edible {} </li>
+					<li>Mature Height {} </li>
 				</ul>
 			</div>
 			<div className="text-align-left m-2">
