@@ -1,4 +1,5 @@
  @import url('https://fonts.googleapis.com/css?family=Caveat:400,700|Pacifico|Sacramento&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 
 
 /*
@@ -16,4 +17,12 @@
     font-family: 'Caveat', 'Pacifico', 'Sacramento', Helvetica, sans-serif, bold;
 
     // text-decoration: underline;
+}
+
+.card-text{
+    font-family:'Permanent Marker', cursive;
+}
+
+.fontSize{
+    font-size: 25px, bold;
 }
