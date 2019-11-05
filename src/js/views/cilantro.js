@@ -13,23 +13,26 @@ function Cilantro() {
 			</div>
 			<div className="text-align-left m-2">
 				<ul>
-					{" "}
-					Required Materials:
-					<li>For a scalable, mobile operation a 14in x 36in x 54in wire rack will house trays and lights</li>
+					<b>Required Materials:</b>
+					<li>
+						For a scalable, mobile, indoor operation, a 14in x 36in x 54in wire rack will house trays and
+						lights
+					</li>
 					<li>16in x 11in x 13in plastic trays with matching cover for the germination period</li>
 					<li>13,000 Lumen 15in LED light strip</li>
-					<li>Coconut fiber pads(pre-cut) or roll (cut to size) </li>
+					<li>Pre-cut coconut fiber pads or roll (cut to size) </li>
 					<li>Zip ties to secure lighting to rack</li>
 					<li>Heating pad</li>
 					<li>Ventilation fans</li>
 					<li>Between 1lb-10lbs of seeds depending entirely on the desired operation size</li>
 					<li>Spray bottle</li>
 					<li>3% hydrogen peroxide</li>
+					<li>Pure Lemon juice to balance pH</li>
 				</ul>
 			</div>
 			<div className="text-align-left m-2">
 				<ul>
-					Vital statistics from Trefle.io API
+					<b>Vital statistics from Trefle.io API:</b>
 					<li>Days to Maturity:</li>
 					<li>Precipitation Min - Max</li>
 					<li>Temperature Min - Max</li>

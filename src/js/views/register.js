@@ -2,19 +2,24 @@ import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
 const Register = () => {
-	const inputFullname = useRef(null);
+	const inputFname = useRef(null);
+	const inputLname = useRef(null);
 	const inputEmail = useRef(null);
 	const inputPhone = useRef(null);
 	const inputPassword = useRef(null);
 
-	const [fullname, setFullname] = useState("");
+	const [fname, setFname] = useState("");
+	const [lname, setLname] = useState("");
 	const [phone, setPhone] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 
 	const registerFormHandler = () => {
-		if (!fullname) {
-			inputFullname.current.style.border = "1px solid red";
+		if (!fname) {
+			inputFname.current.style.border = "1px solid red";
+		}
+		if (!lname) {
+			inputLname.current.style.border = "1px solid red";
 		}
 		if (!phone) {
 			inputPhone.current.style.border = "1px solid red";
@@ -26,7 +31,8 @@ const Register = () => {
 			inputPassword.current.style.border = "1px solid red";
 		} else {
 			let userRegisterData = JSON.stringify({
-				fullname: fullname,
+				fname: fname,
+				lname: lname,
 				phone: phone,
 				email: email,
 				password: password
@@ -57,14 +63,25 @@ const Register = () => {
 				<div className="card border-success p-3">
 					<h1 className="text-center">Register</h1>
 					<div className="form-group">
-						<label>Full Name</label>
+						<label>First Name</label>
 						<input
 							type="text"
-							placeholder="Enter your full name"
+							placeholder="Enter your first name"
 							className="form-control"
-							ref={inputFullname}
-							value={fullname}
-							onChange={e => setFullname(e.target.value)}
+							ref={inputFname}
+							value={fname}
+							onChange={e => setFname(e.target.value)}
+						/>
+					</div>
+					<div className="form-group">
+						<label>Last Name</label>
+						<input
+							type="text"
+							placeholder="Enter your last name"
+							className="form-control"
+							ref={inputLname}
+							value={lname}
+							onChange={e => setLname(e.target.value)}
 						/>
 					</div>
 					<div className="form-group">
@@ -117,7 +134,7 @@ const Register = () => {
 					</div>
 				</div>
 			</div>
-			<div className="mx-auto m-1">
+			<div className="mx-auto m-4">
 				<Link to="/">
 					<button className="btn btn-success">Back home</button>
 				</Link>

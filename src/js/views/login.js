@@ -48,14 +48,14 @@ export const Demo = () => {
 
 	return (
 		<>
-			<div className="mx-auto pt-1 mt-4">
+			<div className="mx-auto pt-5 mt-5">
 				<div className="card border-success p-3 ">
 					<div className="form-group mt-6">
 						<h1 className="text-center">Login</h1>
 						<label>Email</label>
 						<input
 							type="text"
-							placeholder="Enter a username or email"
+							placeholder="Enter a your email"
 							className="form-control"
 							value={email}
 							onChange={e => setEmail(e.target.value)}
@@ -79,7 +79,7 @@ export const Demo = () => {
 					</button>
 				</div>
 			</div>
-			<div className="mx-auto m-1">
+			<div className="mx-auto m-4">
 				<Link to="/">
 					<button className="btn btn-success">Back home</button>
 				</Link>
