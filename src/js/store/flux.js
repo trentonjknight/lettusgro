@@ -1,3 +1,10 @@
+import cilantro from "../../img/cilantro.jpg";
+import carrot from "../../img/carrot.jpg";
+import arugula from "../../img/arugula.jpg";
+import parsley from "../../img/parsley.jpg";
+import basil from "../../img/basil.jpg";
+import broccoli from "../../img/broccoli.jpg";
+
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
