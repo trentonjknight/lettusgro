@@ -7,11 +7,11 @@ export const About = () => {
 	return (
 		<>
 			<div className=" about, text-center pt-5 mt-5">
-				<h3 className="pgtitles">OUR MISSION</h3>
-				<h5 className="fontSize">
+				<h1 className="pgtitles">Our Mission</h1>
+				<p className="fontSize">
 					To inspire healthier communities by engaging people to harvest and benefit from microgreens, herbs,
 					vegetables, and fruits!
-				</h5>
+				</p>
 			</div>
 
 			<div className="card mb-3">
