@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-import cilantro from "../../img/cilantro.jpg";
-import carrot from "../../img/carrot.jpg";
-import arugula from "../../img/arugula.jpg";
-import parsley from "../../img/parsley.jpg";
-import basil from "../../img/basil.jpg";
-import broccoli from "../../img/broccoli.jpg";
-
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
@@ -16,7 +8,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/190891",
 					id: 190891,
 					complete_data: true,
-					common_name: "lingonberry"
+					common_name: "lingonberry",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "verbesina-encelioides",
@@ -24,7 +18,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/191266",
 					id: 191266,
 					complete_data: true,
-					common_name: "golden crownbeard"
+					common_name: "golden crownbeard",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "botrychium-lanceolatum",
@@ -32,7 +28,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/112085",
 					id: 112085,
 					complete_data: true,
-					common_name: "lanceleaf grapefern"
+					common_name: "lanceleaf grapefern",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "botrychium-lunaria",
@@ -40,15 +38,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/112092",
 					id: 112092,
 					complete_data: true,
-					common_name: "common moonwort"
-				},
-				{
-					slug: "buchloe-dactyloides",
-					scientific_name: "Buchloe dactyloides",
-					link: "http://trefle.io/api/plants/112196",
-					id: 112196,
-					complete_data: true,
-					common_name: null
+					common_name: "common moonwort",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "bouteloua-hirsuta",
@@ -56,7 +48,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/112210",
 					id: 112210,
 					complete_data: true,
-					common_name: "hairy grama"
+					common_name: "hairy grama",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "brassica-napus",
@@ -64,7 +58,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/112482",
 					id: 112482,
 					complete_data: true,
-					common_name: "rape"
+					common_name: "rape",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "brassica-juncea",
@@ -72,7 +68,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/112475",
 					id: 112475,
 					complete_data: true,
-					common_name: "brown mustard"
+					common_name: "brown mustard",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "bromus-kalmii",
@@ -80,7 +78,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/112908",
 					id: 112908,
 					complete_data: true,
-					common_name: "arctic brome"
+					common_name: "arctic brome",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "briza-maxima",
@@ -88,7 +88,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/112717",
 					id: 112717,
 					complete_data: true,
-					common_name: "big quakinggrass"
+					common_name: "big quakinggrass",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "bromus-arvensis",
@@ -96,7 +98,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/112796",
 					id: 112796,
 					complete_data: true,
-					common_name: "field brome"
+					common_name: "field brome",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "bromus-ciliatus",
@@ -104,7 +108,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/112835",
 					id: 112835,
 					complete_data: true,
-					common_name: "fringed brome"
+					common_name: "fringed brome",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "danthonia-intermedia",
@@ -112,7 +118,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/127275",
 					id: 127275,
 					complete_data: true,
-					common_name: "timber oatgrass"
+					common_name: "timber oatgrass",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "bromus-inermis",
@@ -120,7 +128,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/112884",
 					id: 112884,
 					complete_data: true,
-					common_name: "smooth brome"
+					common_name: "smooth brome",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "bromelia-pinguin",
@@ -128,7 +138,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/112781",
 					id: 112781,
 					complete_data: true,
-					common_name: "pinguin"
+					common_name: "pinguin",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "bromus-vulgaris",
@@ -136,7 +148,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/113017",
 					id: 113017,
 					complete_data: true,
-					common_name: "Columbia brome"
+					common_name: "Columbia brome",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "calamagrostis-rubescens",
@@ -144,7 +158,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/113890",
 					id: 113890,
 					complete_data: true,
-					common_name: "pinegrass"
+					common_name: "pinegrass",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "bucida-buceras",
@@ -152,7 +168,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/113405",
 					id: 113405,
 					complete_data: true,
-					common_name: "gregorywood"
+					common_name: "gregorywood",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "calophyllum-antillanum",
@@ -160,7 +178,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/114395",
 					id: 114395,
 					complete_data: true,
-					common_name: "Antilles calophyllum"
+					common_name: "Antilles calophyllum",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "calamagrostis-coarctata",
@@ -168,7 +188,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/113841",
 					id: 113841,
 					complete_data: true,
-					common_name: "Nuttall's reedgrass"
+					common_name: "Nuttall's reedgrass",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "cajanus-cajan",
@@ -176,7 +198,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/113766",
 					id: 113766,
 					complete_data: true,
-					common_name: "pigeonpea"
+					common_name: "pigeonpea",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "callitriche-palustris",
@@ -184,7 +208,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/114228",
 					id: 114228,
 					complete_data: true,
-					common_name: "vernal water-starwort"
+					common_name: "vernal water-starwort",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "callitriche-heterophylla",
@@ -192,7 +218,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/114214",
 					id: 114214,
 					complete_data: true,
-					common_name: "twoheaded water-starwort"
+					common_name: "twoheaded water-starwort",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "calophyllum-inophyllum",
@@ -200,7 +228,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/114400",
 					id: 114400,
 					complete_data: true,
-					common_name: "Alexandrian laurel"
+					common_name: "Alexandrian laurel",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "caltha-palustris",
@@ -208,7 +238,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/114644",
 					id: 114644,
 					complete_data: true,
-					common_name: "yellow marsh marigold"
+					common_name: "yellow marsh marigold",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "caesalpinia-gilliesii",
@@ -216,7 +248,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/113739",
 					id: 113739,
 					complete_data: true,
-					common_name: "bird-of-paradise shrub"
+					common_name: "bird-of-paradise shrub",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "cabomba-caroliniana",
@@ -224,7 +258,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/113702",
 					id: 113702,
 					complete_data: true,
-					common_name: "Carolina fanwort"
+					common_name: "Carolina fanwort",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "calochortus-macrocarpus",
@@ -232,7 +268,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/114322",
 					id: 114322,
 					complete_data: true,
-					common_name: "sagebrush mariposa lily"
+					common_name: "sagebrush mariposa lily",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "calamovilfa-longifolia",
@@ -240,7 +278,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/113970",
 					id: 113970,
 					complete_data: true,
-					common_name: "prairie sandreed"
+					common_name: "prairie sandreed",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				},
 				{
 					slug: "callirhoe-involucrata",
@@ -248,7 +288,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					link: "http://trefle.io/api/plants/114143",
 					id: 114143,
 					complete_data: true,
-					common_name: "purple poppymallow"
+					common_name: "purple poppymallow",
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				}
 			]
 		},
@@ -317,5 +359,3 @@ const getState = ({ getStore, getActions, setStore }) => {
 };
 
 export default getState;
-=======
->>>>>>> ab3f4289f570f097924a1eedaac0478355e01804
