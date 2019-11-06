@@ -8,14 +8,6 @@ import "../../styles/demo.scss";
 export const Login = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
-	//const { setAuth } = useContext(UserContext);
-
-	const login = () => {
-		let userLoginData = JSON.stringify({
-			email: email,
-			password: password
-		});
-	};
 
 	return (
 		<>
@@ -45,7 +37,14 @@ export const Login = () => {
 							onChange={e => setPassword(e.target.value)}
 						/>
 					</div>
-					<button className="btn btn-success" onClick={() => login()}>
+					<button
+						className="btn btn-success"
+						onClick={() =>
+							actions.login({
+								email: email,
+								password: password
+							})
+						}>
 						Login
 					</button>
 				</div>

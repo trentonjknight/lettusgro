@@ -1,5 +1,68 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
+		actions: {
+			register: registerData => {
+				fetch("https://3000-b7502b17-1c67-4583-8012-9cd42c597a0a.ws-us02.gitpod.io/register", {
+					method: "POST",
+					body: JSON.stringify(registerData),
+					headers: {
+						"Content-Type": "application/json"
+					}
+				})
+					.then(res => res.json())
+					.then(data => {
+						console.log(data);
+						// setStore();
+						// alert("REGISTER SUCCESSFUL");
+						//console.log(res);
+						// history.push("/login");
+					})
+					.catch(error => {
+						//console.log("Error:", error);
+						alert("error", JSON.stringify(error));
+					});
+			},
+			login: userLoginData => {
+				fetch("https://3000-b7502b17-1c67-4583-8012-9cd42c597a0a.ws-us02.gitpod.io/login", {
+					method: "POST",
+					body: JSON.stringify(userLoginData),
+					cors: "no-cors",
+					headers: {
+						"Content-Type": "application/json"
+					}
+				})
+					.then(res => res.json())
+					.then(response => {
+						let token = response.token;
+						let email = response.email;
+						let fname = response.fname;
+						let lname = response.lname;
+						if (!token && !email && !fname && !lname) {
+							alert("Invalid Input, Please Try Again");
+						} else {
+							alert("LOGIN SUCCESSFUL");
+							localStorage.setItem("token", token);
+							localStorage.setItem("email", email);
+							localStorage.setItem("firstname", fname);
+							localStorage.setItem("lastname", lname);
+
+							history.push("/");
+						}
+					})
+					.catch(error => {
+						alert("Something Went Wrong, Try again");
+						console.log("Error:", error);
+					});
+			},
+			getPlant: name => {
+				fetch("https://trefle.io/api/plants?q=&token=NUl6YXBQa3RiVmlJQVVMZWZ2cWYxUT09" + name)
+					.then(res => res.json())
+					.then(data => {
+						setStore({ plant: data });
+						alert("Plant Received");
+					});
+			}
+		},
 		store: {
 			plants: [
 				{
@@ -293,67 +356,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				}
 			]
-		},
-		actions: {
-			register: () => {
-				fetch("/register", {
-					method: "POST",
-					body: userRegisterData,
-					headers: {
-						"Content-Type": "application/json"
-					}
-				})
-					.then(res => res.json())
-					.then(res => {
-						alert("REGISTER SUCCESSFUL");
-						//console.log(res);
-						history.push("/login");
-					})
-					.catch(error => {
-						//console.log("Error:", error);
-						alert("error", JSON.stringify(error));
-					});
-			},
-			login: () => {
-				fetch("", {
-					method: "POST",
-					body: userLoginData,
-					cors: "no-cors",
-					headers: {
-						"Content-Type": "application/json"
-					}
-				})
-					.then(res => res.json())
-					.then(response => {
-						let token = response.token;
-						let email = response.email;
-						let fname = response.fname;
-						let lname = response.lname;
-						if (!token && !email && !fname && !lname) {
-							alert("Invalid Input, Please Try Again");
-						} else {
-							alert("LOGIN SUCCESSFUL");
-							localStorage.setItem("token", token);
-							localStorage.setItem("email", email);
-							localStorage.setItem("firstname", fname);
-							localStorage.setItem("lastname", lname);
-
-							history.push("/");
-						}
-					})
-					.catch(error => {
-						alert("Something Went Wrong, Try again");
-						console.log("Error:", error);
-					});
-			},
-			getPlant: name => {
-				fetch("https://trefle.io/api/plants?q=&token=NUl6YXBQa3RiVmlJQVVMZWZ2cWYxUT09" + name)
-					.then(res => res.json())
-					.then(data => {
-						setStore({ plant: data });
-						alert("Plant Received");
-					});
-			}
 		}
 	};
 };
