@@ -19,9 +19,14 @@ export const Mainview = () => {
 						<th scope="row">1</th>
 						<td>Celery</td>
 						<td>
+							<Gauges color="blue" />
+						</td>
+						<td>
+							<Gauges color="red" />
+						</td>
+						<td>
 							<Gauges />
 						</td>
-						<td>@mdo</td>
 					</tr>
 					<tr>
 						<th scope="row">2</th>

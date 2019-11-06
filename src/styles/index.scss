@@ -41,9 +41,9 @@
 }
 
                     // Gauges Styling
-html {
-  font-size:150%;
-}
+// html {
+//   font-size:150%;
+// }
 
 
 .gauge {
@@ -137,9 +137,9 @@ html {
 .percentage .meter { animation-delay:.8s; }
 
 
-html { position:relative; height:100%; }
-html, body { display:-webkit-flex; display:flex; }
-body { width:100%; align-self:center; text-align:center; overflow:hidden; background:#222; }
+// html { position:relative; height:100%; }
+// html, body { display:-webkit-flex; display:flex; }
+// body { width:100%; align-self:center; text-align:center; overflow:hidden; background:#222; }
 
 figure { flex:1; }
 figcaption { display:block; font:10pt monospace; color:#444; user-select:none;}
