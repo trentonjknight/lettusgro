@@ -23,10 +23,12 @@ export const Plants = () => {
 					</Link>
 				</div>
 				<div className="card border-success">
-					<img src={carrot} className="card-img-top" alt="..." />
-					<div className="card-body">
-						<h3 className="card-title">Carrots</h3>
-					</div>
+					<Link to="/cilantro">
+						<img src={carrot} className="card-img-top" alt="..." />
+						<div className="card-body">
+							<h3 className="card-title">Carrots</h3>
+						</div>
+					</Link>
 				</div>
 				<div className="card border-success">
 					<img src={arugula} className="card-img-top" alt="..." />
