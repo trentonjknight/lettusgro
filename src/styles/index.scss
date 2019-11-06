@@ -24,7 +24,8 @@
 }
 
 .fontSize{
-    font-size: 25px, bold;
+    font-size: 13px;
+    // font-weight: bold;
 }
 
 .fontColor{
@@ -39,6 +40,110 @@
     margin-right: auto;
     width: 100%;
 }
+
+                    // Gauges Styling
+// html {
+//   font-size:150%;
+// }
+
+
+.gauge {
+  display:inline-block;
+  position:relative;
+  width:10rem;
+  height:5rem;
+  overflow:hidden;
+  margin:2rem;
+}
+
+.gauge:before, .gauge:after, .meter {
+  position:absolute;
+  display:block;
+  content:"";
+}
+
+.gauge:before, .meter { width:10rem; height:5rem; }
+.gauge:before { border-radius:5rem 5rem 0 0; background:#2a2a2a; }
+
+.gauge:after {
+  position:absolute;
+  bottom:0;
+  left:2.5rem;
+  width:5rem;
+  height:2.5rem;
+  background:#222;
+  border-radius:2.5rem 2.5rem 0 0;
+}
+
+.meter {
+  top:100%;
+  transition:1.5s;
+  transform-origin:center top;
+  border-radius:0 0 6rem 6rem;
+  background:deepskyblue;
+}
+
+.gauge:hover .meter { transform:rotate(.5turn); }
+
+
+/* Overload effect ==================== */
+.overload { transform-origin:center center; }
+.overload:hover {
+  animation:overload .15s .5s infinite;
+}
+.overload .meter { background:gold; }
+.overload:hover .meter { background:orangered; }
+@keyframes overload {
+  25%{ transform:translateX(2px); }
+  50%{ transform:rotate(-1deg); }
+  75%{ transform:translateX(1px); }
+}
+
+
+/* Gauge with percentage indicator ============== */
+.percentage .meter { background:limegreen; }
+.percentage-container {
+  position:absolute;
+  bottom:-.75rem;
+  left:2.5rem;
+  z-index:1000;
+  width:5rem;
+  height:2.5rem;
+  overflow:hidden;
+}
+
+.percentage-indicator {
+  font:bold 1.25rem/1.6 sans-serif;
+  color:#333;
+  line-height:2.5rem;
+  white-space:pre;
+  transition:1.5s;
+  vertical-align:baseline;
+  user-select:none;
+}
+
+.gauge:hover .percentage-indicator {
+   transform:translateY(-50rem);
+   color:limegreen;
+}
+
+
+
+
+/* Demo code ==================== */
+
+.meter { animation:empty 1.5s linear both; }
+  @keyframes empty { 0%{ transform:rotate(180deg); } }
+.overload .meter { animation-delay:.4s; }
+.percentage .meter { animation-delay:.8s; }
+
+
+// html { position:relative; height:100%; }
+// html, body { display:-webkit-flex; display:flex; }
+// body { width:100%; align-self:center; text-align:center; overflow:hidden; background:#222; }
+
+figure { flex:1; }
+figcaption { display:block; font:10pt monospace; color:#444; user-select:none;}
 
 // .responsive {
 //   width: 100%;
