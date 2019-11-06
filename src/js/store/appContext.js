@@ -22,6 +22,19 @@ const injectContext = PassedComponent => {
 		);
 
 		useEffect(() => {
+			fetch("https://trefle.io/api/plants", {
+				headers: {
+					"Content-Type": "application/json",
+					authorization: "Bearer NUl6YXBQa3RiVmlJQVVMZWZ2cWYxUT09"
+				}
+			})
+				.then(response => response.json())
+				.then(data => {
+					let { store } = state;
+					setState({ store: { ...store, plant: data } });
+					console.log(data);
+				});
+
 			/**
 			 * EDIT THIS!
 			 * This function is the equivalent to "window.onLoad", it only run once on the entire application lifetime
