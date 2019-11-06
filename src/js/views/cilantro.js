@@ -8,8 +8,12 @@ function Cilantro() {
 			<div className="mx-auto mt-3">
 				<div className="mt-5 mx-auto">
 					<h2 className="text-center">Choose type:</h2>
-					<button className="btn btn-success text-light m-1">Microgreen</button>
-					<button className="btn btn-success text-light m-1">Mature Plant</button>
+					<Link to="/details" className="btn btn-success text-light m-1">
+						Microgreen
+					</Link>
+					<Link to="/details" className="btn btn-success text-light m-1">
+						Mature Plant
+					</Link>
 				</div>
 			</div>
 			<div className="text-align-left m-2">

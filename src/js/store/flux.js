@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import cilantro from "../../img/cilantro.jpg";
 import carrot from "../../img/carrot.jpg";
 import arugula from "../../img/arugula.jpg";
@@ -316,3 +317,5 @@ const getState = ({ getStore, getActions, setStore }) => {
 };
 
 export default getState;
+=======
+>>>>>>> ab3f4289f570f097924a1eedaac0478355e01804

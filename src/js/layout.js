@@ -5,6 +5,7 @@ import ScrollToTop from "./component/scrollToTop";
 import { Home } from "./views/home";
 import { Login } from "./views/login";
 import { Plants } from "./views/plants";
+import { Singlecrop } from "./views/singlecrop";
 import Cilantro from "./views/cilantro";
 import Register from "./views/register";
 import { About } from "./views/about";
@@ -28,6 +29,7 @@ export const Layout = () => {
 						<Route exact path="/" component={Home} />
 						<Route path="/login" component={Login} />
 						<Route path="/plants" component={Plants} />
+						<Route path="/details" component={Singlecrop} />
 						<Route path="/cilantro" component={Cilantro} />
 						<Route path="/register" component={Register} />
 						<Route path="/about" component={About} />
