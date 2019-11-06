@@ -74,36 +74,10 @@ export const Singlecrop = () => {
 						</tbody>
 					</table>
 				</p>
-				<a className="btn btn-primary btn-lg" href="#" role="button">
-					Learn more
+				<a className="btn btn-dark text-light btn-lg" href="#" role="button">
+					Plant New
 				</a>
 			</div>
 		</>
 	);
 };
-
-{
-	/*<table className="table singlecrop , responsive , card border-success">
-	<thead>
-		<tr>
-			<th scope="col">Species: </th>
-			<th scope="col">Lifecycle:</th>
-			<th scope="col">Temperature min/max:</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th scope="row">Species:</th>
-			<td>Carotus</td>
-		</tr>
-		<tr>
-			<th scope="row">Lifecycle:</th>
-			<td>70 to 80 days until maturity</td>
-		</tr>
-		<tr>
-			<th scope="row">Temperature min/max:</th>
-			<td>Between 60 and 70 degrees Fahrenheit</td>
-		</tr>
-	</tbody>
-</table>;*/
-}
