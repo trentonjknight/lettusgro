@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-import cilantro from "../../img/cilantro.jpg";
-import carrot from "../../img/carrot.jpg";
-import arugula from "../../img/arugula.jpg";
-import parsley from "../../img/parsley.jpg";
-import basil from "../../img/basil.jpg";
-import broccoli from "../../img/broccoli.jpg";
-
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
@@ -317,5 +309,3 @@ const getState = ({ getStore, getActions, setStore }) => {
 };
 
 export default getState;
-=======
->>>>>>> ab3f4289f570f097924a1eedaac0478355e01804

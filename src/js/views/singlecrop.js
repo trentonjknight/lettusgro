@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import carrot from "../../img/carrot.jpg";
 import seedling from "../../img/seedling.png";
-
+// import carrotgreens from "../../img/greens.mp4";
 export const Singlecrop = () => {
 	return (
 		<>
@@ -12,7 +12,7 @@ export const Singlecrop = () => {
 						backgroundImage:
 							"url('https://www.almanac.com/sites/default/files/image_nodes/carrots-table_popidar-ss.jpg')"
 					}}
-					className="singlecrop , responsive , card border-success"
+					className="singlecrop responsive card border-success"
 				/>
 			</div>
 			<div className="jumbotron">
@@ -63,10 +63,8 @@ export const Singlecrop = () => {
 								</tr>
 								<td>
 									<div>
-										<video width="320" height="240" controls>
-											<source src="movie.mp4" type="video/mp4" />
-											<source src="movie.ogg" type="video/ogg" />
-											Your browser does not support the video tag.
+										<video loop autoPlay id="myVideo" width="60%" controls>
+											{/* <source src={carrotgreens} type="video/mp4" /> */}
 										</video>
 									</div>
 								</td>
@@ -75,35 +73,9 @@ export const Singlecrop = () => {
 					</table>
 				</p>
 				<a className="btn btn-primary btn-lg" href="#" role="button">
-					Learn more
+					Plant New
 				</a>
 			</div>
 		</>
 	);
 };
-
-{
-	/*<table className="table singlecrop , responsive , card border-success">
-	<thead>
-		<tr>
-			<th scope="col">Species: </th>
-			<th scope="col">Lifecycle:</th>
-			<th scope="col">Temperature min/max:</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th scope="row">Species:</th>
-			<td>Carotus</td>
-		</tr>
-		<tr>
-			<th scope="row">Lifecycle:</th>
-			<td>70 to 80 days until maturity</td>
-		</tr>
-		<tr>
-			<th scope="row">Temperature min/max:</th>
-			<td>Between 60 and 70 degrees Fahrenheit</td>
-		</tr>
-	</tbody>
-</table>;*/
-}
