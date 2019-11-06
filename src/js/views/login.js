@@ -5,7 +5,7 @@ import { UserContext } from "../views/UserContext";
 
 import "../../styles/demo.scss";
 
-export const Demo = () => {
+export const Login = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	//const { setAuth } = useContext(UserContext);
@@ -15,35 +15,6 @@ export const Demo = () => {
 			email: email,
 			password: password
 		});
-		fetch("http://0.0.0.0:3000/login", {
-			method: "POST",
-			body: userLoginData,
-			cors: "no-cors",
-			headers: {
-				"Content-Type": "application/json"
-			}
-		})
-			.then(res => res.json())
-			.then(response => {
-				let token = response.token;
-				let email = response.email;
-				let fullname = response.fullname;
-				if (!token && !email && !fullname) {
-					alert("Invalid Input, Please Try Again");
-				} else {
-					alert("LOGIN SUCCESSFUL");
-					localStorage.setItem("token", token);
-					localStorage.setItem("email", email);
-					localStorage.setItem("firstname", firstname);
-					localStorage.setItem("lastname", lastname);
-
-					history.push("/");
-				}
-			})
-			.catch(error => {
-				alert("Something Went Wrong, Try again");
-				console.log("Error:", error);
-			});
 	};
 
 	return (
@@ -74,7 +45,7 @@ export const Demo = () => {
 							onChange={e => setPassword(e.target.value)}
 						/>
 					</div>
-					<button className="btn btn-success" onClick={login()}>
+					<button className="btn btn-success" onClick={() => login()}>
 						Login
 					</button>
 				</div>
