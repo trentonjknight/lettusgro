@@ -32,9 +32,9 @@ export const Singlecrop = () => {
 										<tr>
 											<th scope="row">Difficulty:</th>
 											<td>
-												<img src={seedling} width="20px" height="20px" />
-												<img src={seedling} width="20px" height="20px" />
-												<img src={seedling} width="20px" height="20px" />
+												<img src={seedling} width="25px" height="20px" />
+												<img src={seedling} width="25px" height="20px" />
+												<img src={seedling} width="25px" height="20px" />
 											</td>
 										</tr>
 										<tr>
