@@ -7,7 +7,7 @@ import { Login } from "./views/login";
 import { Plants } from "./views/plants";
 import { Singlecrop } from "./views/singlecrop";
 import { Mainview } from "./views/mainview";
-import Cilantro from "./views/cilantro";
+import Selection from "./views/cilantro";
 import Register from "./views/register";
 import { About } from "./views/about";
 import injectContext from "./store/appContext";
@@ -32,7 +32,7 @@ export const Layout = () => {
 						<Route path="/plants" component={Plants} />
 						<Route path="/details" component={Singlecrop} />
 						<Route path="/mainview" component={Mainview} />
-						<Route path="/cilantro" component={Cilantro} />
+						<Route path="/selection/:id" component={Selection} />
 						<Route path="/register" component={Register} />
 						<Route path="/about" component={About} />
 						<Route render={() => <h1>Not found!</h1>} />
