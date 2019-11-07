@@ -12,7 +12,7 @@ export const Singlecrop = () => {
 						backgroundImage:
 							"url('https://www.almanac.com/sites/default/files/image_nodes/carrots-table_popidar-ss.jpg')"
 					}}
-					className="singlecrop responsive card border-success"
+					className="singlecrop responsive"
 				/>
 			</div>
 			<div className="jumbotron">
