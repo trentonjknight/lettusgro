@@ -21,14 +21,15 @@ export const Plants = () => {
 				<div className="row">
 					{store.plants.map((item, index) => {
 						return (
-							<div key={index} className="col-4 m-1 text-center">
-								<div className="card border-success">
-									<div className="card-title"> {item.scientific_name} </div>
+							<div key={index} className="col-4 mb-4 text-center">
+								<div className="card bg-light border-dark" style={{ border: "3px solid grey" }}>
 									<Link to={"/cilantro/" + index}>
-										<div className="card-body">
-											<img src={item.url} className="card-img-top" alt="..." />
+										<div>
+											<img src={item.url} width="100%" height="100%" alt="..." />
 										</div>
-										<div className="card-footer">{item.common_name}</div>
+										<div className="card-footer card-text text-dark" style={{ fontSize: "23px" }}>
+											{item.common_name}
+										</div>
 									</Link>
 								</div>
 							</div>

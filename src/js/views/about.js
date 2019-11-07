@@ -1,6 +1,6 @@
 import React from "react";
 import basilfarm from "../../img/basilfarm.jpg";
-import steakgrains from "../../img/steakgrains.jpg";
+import salad from "../../img/salad.jpg";
 // import { Link } from "react-router-dom";
 
 export const About = () => {
@@ -14,7 +14,7 @@ export const About = () => {
 				</p>
 			</div>
 
-			<div className="card mb-3">
+			<div className="ogregreen card mb-3">
 				<div className="row no-gutters">
 					<div className="col-md-4">
 						<img src={basilfarm} className="card-img" alt="..." />
@@ -44,8 +44,8 @@ export const About = () => {
 				</div>
 			</div>
 
-			<div className="card bg-dark text-white">
-				<img src={steakgrains} className="card-img" alt="..." />
+			<div className="ogregreen card bg-dark text-white">
+				<img src={salad} className="card-img" alt="..." />
 				<div className="card-img-overlay">
 					<h5 className="card-title">Card title</h5>
 					<p className="card-text">
