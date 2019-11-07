@@ -1,7 +1,7 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		actions: {
-			register: registerData => {
+			register: (registerData, props) => {
 				fetch("https://3000-b7502b17-1c67-4583-8012-9cd42c597a0a.ws-us02.gitpod.io/register", {
 					method: "POST",
 					body: JSON.stringify(registerData),
@@ -12,42 +12,22 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then(res => res.json())
 					.then(data => {
 						console.log(data);
-						// setStore();
-						// alert("REGISTER SUCCESSFUL");
-						//console.log(res);
-						// history.push("/login");
+						props.history.push("/login");
 					})
-					.catch(error => {
-						//console.log("Error:", error);
-						alert("error", JSON.stringify(error));
-					});
+					.catch(error => alert("error", JSON.stringify(error)));
 			},
-			login: userLoginData => {
+			login: (userLoginData, props) => {
 				fetch("https://3000-b7502b17-1c67-4583-8012-9cd42c597a0a.ws-us02.gitpod.io/login", {
 					method: "POST",
 					body: JSON.stringify(userLoginData),
-					cors: "no-cors",
 					headers: {
 						"Content-Type": "application/json"
 					}
 				})
 					.then(res => res.json())
-					.then(response => {
-						let token = response.token;
-						let email = response.email;
-						let fname = response.fname;
-						let lname = response.lname;
-						if (!token && !email && !fname && !lname) {
-							alert("Invalid Input, Please Try Again");
-						} else {
-							alert("LOGIN SUCCESSFUL");
-							localStorage.setItem("token", token);
-							localStorage.setItem("email", email);
-							localStorage.setItem("firstname", fname);
-							localStorage.setItem("lastname", lname);
-
-							history.push("/");
-						}
+					.then(data => {
+						setStore({ token: data.token, user: data.user });
+						props.history.push("/");
 					})
 					.catch(error => {
 						alert("Something Went Wrong, Try again");
@@ -64,6 +44,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 			}
 		},
 		store: {
+			token: null,
+			user: null,
 			plants: [
 				{
 					slug: "vaccinium-vitis-idaea",
@@ -332,26 +314,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 					id: 114322,
 					complete_data: true,
 					common_name: "sagebrush mariposa lily",
-					url:
-						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
-				},
-				{
-					slug: "calamovilfa-longifolia",
-					scientific_name: "Calamovilfa longifolia",
-					link: "http://trefle.io/api/plants/113970",
-					id: 113970,
-					complete_data: true,
-					common_name: "prairie sandreed",
-					url:
-						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
-				},
-				{
-					slug: "callirhoe-involucrata",
-					scientific_name: "Callirhoe involucrata",
-					link: "http://trefle.io/api/plants/114143",
-					id: 114143,
-					complete_data: true,
-					common_name: "purple poppymallow",
 					url:
 						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196"
 				}

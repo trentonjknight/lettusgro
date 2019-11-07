@@ -2,7 +2,7 @@ import React, { useState, useRef, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
-const Register = () => {
+const Register = props => {
 	const { actions } = useContext(Context);
 
 	const inputFname = useRef(null);
@@ -34,7 +34,7 @@ const Register = () => {
 	return (
 		<>
 			<div className="mx-auto mt-5 pt-5">
-				<div className="card border-success p-3">
+				<div className="card ogregreen border-success p-3">
 					<h1 className="text-center">Register</h1>
 					<div className="form-group">
 						<label>First Name</label>
@@ -102,13 +102,16 @@ const Register = () => {
 							className="btn btn-success"
 							onClick={() => {
 								if (validate())
-									actions.register({
-										fname: fname.trim(),
-										lname: lname.trim(),
-										email: email.trim(),
-										phone: phone.trim(),
-										password: password
-									});
+									actions.register(
+										{
+											fname: fname.trim(),
+											lname: lname.trim(),
+											email: email.trim(),
+											phone: phone.trim(),
+											password: password
+										},
+										props
+									);
 							}}>
 							REGISTER
 						</button>

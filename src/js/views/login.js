@@ -5,9 +5,10 @@ import { UserContext } from "../views/UserContext";
 
 import "../../styles/demo.scss";
 
-export const Login = () => {
+export const Login = props => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+	const { store, actions } = useContext(Context);
 
 	return (
 		<>
@@ -40,10 +41,13 @@ export const Login = () => {
 					<button
 						className="btn btn-success"
 						onClick={() =>
-							actions.login({
-								email: email,
-								password: password
-							})
+							actions.login(
+								{
+									email: email,
+									password: password
+								},
+								props
+							)
 						}>
 						Login
 					</button>
