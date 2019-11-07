@@ -16,7 +16,7 @@ export const Plants = () => {
 	return (
 		<>
 			<hr />
-			<h1 className="mx-auto mt-5">What would you like to grow?</h1>
+			<h1 className="mx-auto mt-5 pgtitles">What would you like to grow?</h1>
 			<div className="container">
 				<div className="row">
 					{store.plants.map((item, index) => {

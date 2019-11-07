@@ -16,7 +16,7 @@ function Cilantro() {
 					</Link>
 				</div>
 			</div>
-			<div className="text-align-left m-2">
+			{/* <div className="text-align-left m-2">
 				<ul>
 					<b>Required Materials:</b>
 					<li>
@@ -34,7 +34,7 @@ function Cilantro() {
 					<li>3% hydrogen peroxide</li>
 					<li>Pure Lemon juice to balance pH</li>
 				</ul>
-			</div>
+			</div> */}
 			<div className="text-align-left m-2">
 				<ul>
 					<b>Vital statistics from Trefle.io API:</b>
@@ -61,7 +61,7 @@ function Cilantro() {
 			</div>
 			<div className="text-align-left m-2">
 				<ol>
-					Grow instructions:
+					<b>Grow instructions:</b>
 					<li>Boil coconut fiber pads 10 mins on high.</li>
 					<li>Soak pads past boil for 24 hours.</li>
 				</ol>

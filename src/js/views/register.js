@@ -1,7 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
 const Register = () => {
+	const { actions } = useContext(Context);
+
 	const inputFname = useRef(null);
 	const inputLname = useRef(null);
 	const inputEmail = useRef(null);
@@ -14,30 +17,18 @@ const Register = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 
-	const registerFormHandler = () => {
-		if (!fname) {
-			inputFname.current.style.border = "1px solid red";
-		}
-		if (!lname) {
-			inputLname.current.style.border = "1px solid red";
-		}
-		if (!phone) {
-			inputPhone.current.style.border = "1px solid red";
-		}
-		if (!email) {
-			inputEmail.current.style.border = "1px solid red";
-		}
-		if (!password) {
-			inputPassword.current.style.border = "1px solid red";
-		} else {
-			let userRegisterData = JSON.stringify({
-				fname: fname,
-				lname: lname,
-				phone: phone,
-				email: email,
-				password: password
-			});
-		}
+	const validate = () => {
+		if (!fname) inputFname.current.style.border = "1px solid red";
+
+		if (!lname) inputLname.current.style.border = "1px solid red";
+
+		if (!phone) inputPhone.current.style.border = "1px solid red";
+
+		if (!email) inputEmail.current.style.border = "1px solid red";
+
+		if (!password) inputPassword.current.style.border = "1px solid red";
+
+		return fname && lname && phone && email && password;
 	};
 
 	return (
@@ -110,7 +101,14 @@ const Register = () => {
 						<button
 							className="btn btn-success"
 							onClick={() => {
-								registerFormHandler();
+								if (validate())
+									actions.register({
+										fname: fname.trim(),
+										lname: lname.trim(),
+										email: email.trim(),
+										phone: phone.trim(),
+										password: password
+									});
 							}}>
 							REGISTER
 						</button>

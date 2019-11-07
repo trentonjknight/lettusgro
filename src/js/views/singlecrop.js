@@ -77,7 +77,7 @@ export const Singlecrop = () => {
 						<div className="col-lg">
 							<div className="video-container">
 								<iframe
-									width="560"
+									width="100%"
 									height="315"
 									src="https://www.youtube.com/embed/qlmgO3O55L4"
 									frameBorder="0"
