@@ -1,5 +1,5 @@
 import React from "react";
-import sprout from "../../img/sprout.png";
+import sprout from "../../img/Sprout2.png";
 import vine from "../../img/vine.png";
 import "../../styles/home.scss";
 import { Link } from "react-router-dom";

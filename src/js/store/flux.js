@@ -44,6 +44,33 @@ const getState = ({ getStore, getActions, setStore }) => {
 			}
 		},
 		store: {
+			progressbar: [
+				{
+					// style:"{{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}",
+					width: "30",
+					image: "progressstep.png"
+				},
+				{
+					// style:"{{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}",
+					width: "30",
+					image: "sprout2.png"
+				},
+				{
+					// style:"{{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}",
+					width: "30",
+					image: "sprout3.png"
+				},
+				{
+					// style:"{{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}",
+					width: "30",
+					image: "sprout4.png"
+				},
+				{
+					// style:"{{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}",
+					width: "30",
+					image: "sprout5.png"
+				}
+			],
 			token: null,
 			user: null,
 			plants: [
