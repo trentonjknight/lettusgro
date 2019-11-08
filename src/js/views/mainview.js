@@ -7,8 +7,8 @@ export const Mainview = () => {
 			<table className="table table-dark text-light mt-5">
 				<thead>
 					<tr>
-						<th scope="col">Day</th>
 						<th scope="col">Harvest</th>
+						<th scope="col">Life Cycle</th>
 						<th scope="col">Temperature</th>
 						<th scope="col">Phbalance</th>
 						<th scope="col">Light</th>
@@ -16,8 +16,8 @@ export const Mainview = () => {
 				</thead>
 				<tbody>
 					<tr>
-						<th scope="row">1</th>
-						<td>Celery</td>
+						<th scope="row">Celery</th>
+						<td>(progressbar)</td>
 						<td>
 							<Gauges color="blue" />
 						</td>
@@ -29,14 +29,14 @@ export const Mainview = () => {
 						</td>
 					</tr>
 					<tr>
-						<th scope="row">2</th>
-						<td>Jacob</td>
+						<th scope="row">Carrots</th>
+						<td>(progressbar)</td>
 						<td>Thornton</td>
 						<td>@fat</td>
 					</tr>
 					<tr>
-						<th scope="row">3</th>
-						<td>Larry</td>
+						<th scope="row">Arugula</th>
+						<td>(progressbar)</td>
 						<td>the Bird</td>
 						<td>@twitter</td>
 					</tr>
