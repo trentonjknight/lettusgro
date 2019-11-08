@@ -1,13 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
-//assets
-import cilantro from "../../img/cilantro.jpg";
-import carrot from "../../img/carrot.jpg";
-import arugula from "../../img/arugula.jpg";
-import parsley from "../../img/parsley.jpg";
-import basil from "../../img/basil.jpg";
-import broccoli from "../../img/broccoli.jpg";
+
 
 export const Plants = () => {
 	const { store, actions } = useContext(Context);

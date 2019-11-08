@@ -18,7 +18,7 @@ export const Navbar = () => {
 				</Link>
 			</div>
 			{store.token ? (
-				<h4>{store.user.email}</h4>
+				<h3>{store.user.email}</h3>
 			) : (
 				<>
 					<div className="ml-auto">

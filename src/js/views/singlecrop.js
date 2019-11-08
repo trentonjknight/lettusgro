@@ -69,9 +69,11 @@ export const Singlecrop = () => {
 								<a className="btn btn-success btn-lg mr-4" href="#" role="button">
 									Start New Carrot Harvest!
 								</a>
-								<a className="btn btn-success btn-lg" href="#" role="button">
-									Return to Plants
-								</a>
+								<Link to="/plants">
+									<a className="btn btn-success btn-lg" href="#" role="button">
+										Return to Plants
+									</a>
+								</Link>
 							</div>
 						</div>
 						<div className="col-lg">
