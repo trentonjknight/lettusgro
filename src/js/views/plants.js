@@ -2,20 +2,20 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
+
 export const Plants = () => {
 	const { store, actions } = useContext(Context);
-
 	return (
 		<>
 			<hr />
-			<h1 className="mx-auto mt-5 pgtitles">What would you like to grow?</h1>
+			<h1 className="mx-auto mt-5 mb-4 pgtitles">What would you like to grow?</h1>
 			<div className="container">
 				<div className="row">
 					{store.plants.map((item, index) => {
 						return (
 							<div key={index} className="col-4 mb-4 text-center">
 								<div className="card bg-light border-dark" style={{ border: "3px solid grey" }}>
-									<Link to={"/cilantro/" + index}>
+									<Link to={"/selection/" + index}>
 										<div>
 											<img src={item.url} width="100%" height="100%" alt="..." />
 										</div>

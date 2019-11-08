@@ -7,13 +7,15 @@ import { Login } from "./views/login";
 import { Plants } from "./views/plants";
 import { Singlecrop } from "./views/singlecrop";
 import { Mainview } from "./views/mainview";
-import Cilantro from "./views/cilantro";
+import Selection from "./views/plantselection";
 import Register from "./views/register";
 import { About } from "./views/about";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+
+import { Progressbar } from "./views/progressbar";
 
 //create your first component
 export const Layout = () => {
@@ -32,12 +34,12 @@ export const Layout = () => {
 						<Route path="/plants" component={Plants} />
 						<Route path="/details" component={Singlecrop} />
 						<Route path="/mainview" component={Mainview} />
-						<Route path="/cilantro" component={Cilantro} />
+						<Route path="/selection/:id" component={Selection} />
 						<Route path="/register" component={Register} />
 						<Route path="/about" component={About} />
+						<Route path="/progress" component={Progressbar} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
-
 					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>

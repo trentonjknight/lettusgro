@@ -1,6 +1,6 @@
 import React from "react";
 import basilfarm from "../../img/basilfarm.jpg";
-import salad from "../../img/salad.jpg";
+import purrpcrop from "../../img/purplehaze.jpg";
 // import { Link } from "react-router-dom";
 
 export const About = () => {
@@ -45,7 +45,7 @@ export const About = () => {
 			</div>
 
 			<div className="ogregreen card bg-dark text-white">
-				<img src={salad} className="card-img" alt="..." />
+				<img src={purrpcrop} className="card-img" alt="..." />
 				<div className="card-img-overlay">
 					<h5 className="card-title">Card title</h5>
 					<p className="card-text">
