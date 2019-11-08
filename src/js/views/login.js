@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
-import { UserContext } from "../views/UserContext";
 
 import "../../styles/demo.scss";
 
@@ -13,7 +12,7 @@ export const Login = props => {
 	return (
 		<>
 			<div className="mx-auto pt-5 mt-5">
-				<div className="card border-success p-3 ">
+				<div className="card border-success ogregreen p-3 ">
 					<div className="form-group mt-6">
 						<h1 className="text-center">Login</h1>
 						<label>Email</label>
