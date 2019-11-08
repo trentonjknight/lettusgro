@@ -47,7 +47,7 @@ export const Progressbar = () => {
 					})}
 				</ProgressBar>
 				<div onClick={counter} className="btn btn-dark mt-5">
-					Test
+					Begin
 				</div>
 			</div>
 		</>
