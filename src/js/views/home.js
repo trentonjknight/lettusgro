@@ -3,8 +3,8 @@ import sprout from "../../img/Sprout2.png";
 import vine from "../../img/vine.png";
 import "../../styles/home.scss";
 import { Link } from "react-router-dom";
-import "react-step-progress-bar/styles.css";
-import { ProgressBar } from "react-step-progress-bar";
+//import "react-step-progress-bar/styles.css";
+//import { ProgressBar } from "react-step-progress-bar";
 
 export const Home = () => (
 	<>
