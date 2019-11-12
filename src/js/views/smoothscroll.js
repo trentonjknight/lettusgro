@@ -37,6 +37,25 @@ export const Smoothscroll = () => {
 				<p> Once registered, you will be able to create, archive, and monitor specific grow operations.</p>
 			</div>
 			<hr />
+			{/* fill-- quote card section */}
+			<div className="card bg-light">
+				<div className="card-body">
+					<blockquote className="blockquote mb-0">
+						<p>
+							<br />
+							<br />
+							Because microgreens are harvested right after germination, all the nutrients they need to
+							grow remain. When harvested at the right time they are very concentrated with nutrients, the
+							flavor and texture is also great.
+						</p>
+						<footer className="blockquote-footer">
+							Someone famous in <cite title="Source Title">Mother Nature Network</cite>
+						</footer>
+						<br />
+						<br />
+					</blockquote>
+				</div>
+			</div>
 			{/* "Plants Section" */}
 			<ScrollableAnchor id={"plants"}>
 				<div className="pb-4" />
