@@ -1,21 +1,28 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
+import ScrollableAnchor from "react-scrollable-anchor";
 
 export const Navbar = () => {
 	const { store } = useContext(Context);
+	// render();
+	// {
 	return (
-		<nav className=" navbar navbar-light bg-success mb-3">
-			<div>
-				<Link to="/">
-					<span className="navbar-brand h1 text-light">L E T T U S</span>
+		<nav className=" navbar navbar-light bg-success mb-3 position-fixed w-100" style={{ zIndex: "10" }}>
+			<div className="padded">
+				<Link to="/" className="nav-section1 navbar-brand h1 text-light">
+					L E T T U S
 				</Link>
-				<Link to="/plants">
+
+				<a href="#plants">
 					<button className=" btn btn-light text-success m-1">Browse Plants</button>
-				</Link>
-				<Link to="/about">
+				</a>
+				<a href="#about">
 					<button className=" btn btn-light text-success m-1">Our Mission</button>
-				</Link>
+				</a>
+				{/* <Link to="/about">
+					<button className=" btn btn-light text-success m-1">Our Mission</button>
+				</Link> */}
 			</div>
 			{store.token ? (
 				<h3>{store.user.email}</h3>
@@ -35,4 +42,5 @@ export const Navbar = () => {
 			)}
 		</nav>
 	);
+	// }
 };

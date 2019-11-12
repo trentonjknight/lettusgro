@@ -17,6 +17,8 @@ import { Footer } from "./component/footer";
 
 import { Progressbar } from "./views/progressbar";
 
+import { Smoothscroll } from "./views/smoothscroll";
+
 //create your first component
 export const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -38,6 +40,7 @@ export const Layout = () => {
 						<Route path="/register" component={Register} />
 						<Route path="/about" component={About} />
 						<Route path="/progress" component={Progressbar} />
+						<Route path="/smooth" component={Smoothscroll} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Footer />

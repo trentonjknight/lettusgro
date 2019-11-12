@@ -9,7 +9,7 @@ import { ProgressBar } from "react-step-progress-bar";
 
 export const Home = () => (
 	<>
-		<div className="text-center pt-5 mt-3 bgstraw">
+		<div id="link1" className="text-center pt-5 mt-3 bgstraw">
 			<h1>L E T T U S</h1>
 			<div className="tight">
 				<p className="comforta">
