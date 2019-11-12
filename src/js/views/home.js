@@ -4,8 +4,8 @@ import vine from "../../img/vine.png";
 import bgstraw from "../../img/strawhatresized.png";
 import "../../styles/home.scss";
 import { Link } from "react-router-dom";
-import "react-step-progress-bar/styles.css";
-import { ProgressBar } from "react-step-progress-bar";
+//import "react-step-progress-bar/styles.css";
+//import { ProgressBar } from "react-step-progress-bar";
 
 export const Home = () => (
 	<>
