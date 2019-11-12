@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import carrot from "../../img/carrot.jpg";
 import seedling from "../../img/seedling.png";
 // import carrotgreens from "../../img/greens.mp4";
-export const Singlecrop = () => {
+import PropTypes from "prop-types";
+import { Context } from "../store/appContext";
+
+export const Singlecrop = props => {
+	const { store } = useContext(Context);
+	let plant = store.plants[props.match.params.theid].common_name;
+	let species = store.plants[props.match.params.theid].scientific_name;
+	let tempmin = store.plants[props.match.params.theid].temperature_minimum;
+	let tempmax = store.plants[props.match.params.theid].temperature_maximum;
+	let daystm = store.plants[props.match.params.theid].days_to_maturity;
+	let phmin = store.plants[props.match.params.theid].ph_minimum;
+	let phmax = store.plants[props.match.params.theid].ph_maximum;
+	let height = store.plants[props.match.params.theid].mature_height;
+	let water = store.plants[props.match.params.theid].water;
+	let pairings = store.plants[props.match.params.theid].pairings;
+
 	return (
 		<>
 			<div className="details, mt-10">
@@ -16,14 +31,14 @@ export const Singlecrop = () => {
 				/>
 			</div>
 			<div className="jumbotron">
-				<h1 className="display-4">Carrots</h1>
-				<p className="lead">Daucus carota subsp. sativus</p>
+				<h1 className="display-4">{plant}</h1>
+				<p className="lead" />
 				<hr className="my-4" />
 
 				<div className="container">
 					<div className="row">
 						<div className="col-lg">
-							<table className="table singlecrop responsive card border-success">
+							<table className="table singlecrop responsive card border-success ogregreen">
 								<thead>
 									<tr />
 								</thead>
@@ -38,28 +53,40 @@ export const Singlecrop = () => {
 											</td>
 										</tr>
 										<tr>
-											<th scope="row">Species:</th>
-											<td>Carotus</td>
-										</tr>
-										<tr>
-											<th scope="row">Lifecycle:</th>
-											<td>70 to 80 days until maturity</td>
-										</tr>
-										<tr>
-											<th scope="row">Temperature Range:</th>
-											<td>Between 60 and 70 degrees Fahrenheit</td>
-										</tr>
-										<tr>
-											<th scope="row">Precipitation:</th>
-											<td>Between 60 and 70 degrees Fahrenheit</td>
-										</tr>
-										<tr>
-											<th scope="row">Germination:</th>
-											<td>Between 60 and 70 degrees Fahrenheit</td>
+											<th scope="row">Scientific Name:</th>
+											<td>{species}</td>
 										</tr>
 										<tr>
 											<th scope="row">Days to maturity:</th>
-											<td>Between 60 and 70 degrees Fahrenheit</td>
+											<td>{daystm}</td>
+										</tr>
+										<tr>
+											<th scope="row">Mature height:</th>
+											<td>{height}</td>
+										</tr>
+										<tr>
+											<th scope="row">pH Balance:</th>
+											<td>
+												{phmin} - {phmax}
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">Temperature Range:</th>
+											<td>
+												Between {tempmin} - {tempmax} degrees Fahrenheit
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">Water requirements:</th>
+											<td>{water}</td>
+										</tr>
+										<tr>
+											<th scope="row">Germination:</th>
+											<td />
+										</tr>
+										<tr>
+											<th scope="row">Pairings:</th>
+											<td> {pairings} </td>
 										</tr>
 										<td />
 									</tr>
@@ -67,7 +94,7 @@ export const Singlecrop = () => {
 							</table>
 							<div className="d-flex justify-content-center mb-4">
 								<a className="btn btn-success btn-lg mr-4" href="#" role="button">
-									Start New Carrot Harvest!
+									Start New {plant} Harvest!
 								</a>
 								<Link to="/plants">
 									<a className="btn btn-success btn-lg" href="#" role="button">
@@ -93,4 +120,7 @@ export const Singlecrop = () => {
 			</div>
 		</>
 	);
+};
+Selection.propTypes = {
+	match: PropTypes.object
 };
