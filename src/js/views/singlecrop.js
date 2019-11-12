@@ -18,6 +18,7 @@ export const Singlecrop = props => {
 	let height = store.plants[props.match.params.theid].mature_height;
 	let water = store.plants[props.match.params.theid].water;
 	let pairings = store.plants[props.match.params.theid].pairings;
+	let germ = store.plants[props.match.params.theid].germination;
 
 	return (
 		<>
@@ -82,7 +83,7 @@ export const Singlecrop = props => {
 										</tr>
 										<tr>
 											<th scope="row">Germination:</th>
-											<td />
+											<td>{germ} </td>
 										</tr>
 										<tr>
 											<th scope="row">Pairings:</th>
@@ -113,6 +114,29 @@ export const Singlecrop = props => {
 									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 									allowFullScreen
 								/>
+							</div>
+							<div className="text-align-right m-2">
+								<ul>
+									<h2>Required Materials:</h2>
+									<li>
+										For a scalable, mobile, indoor operation, a 14in x 36in x 54in wire rack will
+										house trays and lights
+									</li>
+									<li>
+										16in x 11in x 13in plastic trays with matching cover for the germination period
+									</li>
+									<li>13,000 Lumen 36in LED light strip</li>
+									<li>Pre-cut coconut fiber pads or roll (cut to size) </li>
+									<li>Zip ties to secure lighting to rack</li>
+									<li>Heating pad</li>
+									<li>Ventilation fans</li>
+									<li>Between 1lb-10lbs of seeds depending entirely on the desired operation size</li>
+									<li>Spray bottle</li>
+									<li>3% hydrogen peroxide (to prevent mold growth) </li>
+									<li>Pure Lemon juice to balance pH</li>
+									<li> Hydroponic grow tray (has perforations for roots)</li>
+									<li> Method to test pH (strips or digital)</li>
+								</ul>
 							</div>
 						</div>
 					</div>

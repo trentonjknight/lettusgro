@@ -95,6 +95,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					humidity: "50-100%",
 					pairings: "salads, chicken, spicy dishes",
 					days_to_maturity: "55-60",
+					germination: "5-10 days",
 					water:
 						"Water regularly, being careful not to overwater. Allow soil to go almost dry between watering, then soak thoroughly."
 				},
@@ -108,13 +109,15 @@ const getState = ({ getStore, getActions, setStore }) => {
 						"https://upload.wikimedia.org/wikipedia/commons/a/ac/BasilikumGenovesergro%C3%9Fbl%C3%A4ttriger.jpg",
 					temperature_minimum: "65",
 					temperature_maximum: "70",
-					ph_minimum: "",
-					ph_maximum: "",
+					ph_minimum: "5.5",
+					ph_maximum: "6.5",
 					mature_height: '12-20"',
-					humidity: "",
-					pairings: "",
-					days_to_maturity: "68",
-					water: ""
+					humidity: "50-100%",
+					pairings: "pasta, tomatoes, bruschetta",
+					days_to_maturity: "~68",
+					germination: "5-10 days",
+					water:
+						"Water regularly, being careful not to overwater. Allow soil to go completely dry between watering, then soak thoroughly."
 				},
 				{
 					slug: "brassica-oleracea",
@@ -124,15 +127,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 					id: 112492,
 					url:
 						"https://upload.wikimedia.org/wikipedia/commons/6/63/Brassica_oleracea_convar._capitata_var._alba%2C_spitskool_%281%29.jpg",
-					temperature_minimum: "65",
+					temperature_minimum: "40",
 					temperature_maximum: "70",
-					ph_minimum: "",
-					ph_maximum: "",
+					ph_minimum: "5.5",
+					ph_maximum: "7.5",
 					mature_height: '12-18"',
-					humidity: "",
-					pairings: "",
-					days_to_maturity: "",
-					water: ""
+					humidity: "70-100%",
+					pairings: "fish, lemon, french fries",
+					days_to_maturity: "~50-75",
+					germination: "5-7 days",
+					water: "Keep kale well watered for sustained growth and to keep leaves from getting too tough."
 				},
 				{
 					slug: "brassica-oleracea",
@@ -142,15 +146,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 					id: 112492,
 					url:
 						"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Basket_of_broccoli_in_Singapore_market.jpg/800px-Basket_of_broccoli_in_Singapore_market.jpg",
-					temperature_minimum: "65",
-					temperature_maximum: "70",
-					ph_minimum: "",
-					ph_maximum: "",
+					temperature_minimum: "60",
+					temperature_maximum: "75",
+					ph_minimum: "6",
+					ph_maximum: "7.5",
 					mature_height: '12-18"',
-					humidity: "",
-					pairings: "",
-					days_to_maturity: "",
-					water: ""
+					humidity: "40-80%",
+					pairings: "potatoes, steak, salad",
+					days_to_maturity: "~50",
+					germination: "4-7 days",
+					water: "Bottom water or mist. Maintain even moisture and do not allow sowing medium to dry out."
 				},
 				{
 					slug: "",
@@ -168,6 +173,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					humidity: "",
 					pairings: "",
 					days_to_maturity: "16-25",
+					germination: "",
 					water: ""
 				}
 			]

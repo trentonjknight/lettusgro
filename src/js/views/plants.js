@@ -13,12 +13,14 @@ export const Plants = () => {
 					{store.plants.map((item, index) => {
 						return (
 							<div key={index} className="col-4 mb-4 text-center">
-								<div className="card bg-light border-dark" style={{ border: "3px solid grey" }}>
+								<div
+									className="card bg-light border-dark"
+									style={{ border: "3px solid grey", width: "22rem" }}>
 									<Link to={"/selection/" + index}>
 										<div>
 											<img src={item.url} width="100%" height="100%" alt="..." />
 										</div>
-										<div className="card-footer card-text text-dark" style={{ fontSize: "23px" }}>
+										<div className="card-footer card-text text-dark" style={{ fontSize: "2rem" }}>
 											{item.common_name}
 										</div>
 									</Link>

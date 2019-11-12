@@ -10,7 +10,7 @@ function Selection(props) {
 		<>
 			<div className="mx-auto mt-3">
 				<div className="mt-1 mx-auto">
-					<h1>You have chosen {plant}</h1>
+					<h1>You have chosen {plant}!</h1>
 					<h2 className="text-center">Choose type:</h2>
 					<div className="mx-auto">
 						<Link to={"/details/" + props.match.params.id} className="btn btn-success text-light m-1">
@@ -21,27 +21,6 @@ function Selection(props) {
 						</Link>
 					</div>
 				</div>
-			</div>
-			<div className="text-align-left m-2">
-				<ul>
-					<b>Required Materials:</b>
-					<li>
-						For a scalable, mobile, indoor operation, a 14in x 36in x 54in wire rack will house trays and
-						lights
-					</li>
-					<li>16in x 11in x 13in plastic trays with matching cover for the germination period</li>
-					<li>13,000 Lumen 36in LED light strip</li>
-					<li>Pre-cut coconut fiber pads or roll (cut to size) </li>
-					<li>Zip ties to secure lighting to rack</li>
-					<li>Heating pad</li>
-					<li>Ventilation fans</li>
-					<li>Between 1lb-10lbs of seeds depending entirely on the desired operation size</li>
-					<li>Spray bottle</li>
-					<li>3% hydrogen peroxide (to prevent mold growth) </li>
-					<li>Pure Lemon juice to balance pH</li>
-					<li> Hydroponic grow tray (has perforations for roots)</li>
-					<li> Method to test pH (strips or digital)</li>
-				</ul>
 			</div>
 			<div className="text-align-left m-2">
 				<ol>

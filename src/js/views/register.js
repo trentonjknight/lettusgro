@@ -36,6 +36,11 @@ const Register = props => {
 			<div className="mx-auto mt-5 pt-5">
 				<div className="card ogregreen border-success p-3">
 					<h1 className="text-center">Register</h1>
+					<p>
+						{" "}
+						Once registered, you will be able to create, archive,
+						<br /> and monitor your specific grow operations.
+					</p>
 					<div className="form-group">
 						<label>First Name</label>
 						<input
