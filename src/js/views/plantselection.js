@@ -5,18 +5,18 @@ import { Context } from "../store/appContext";
 function Selection(props) {
 	return (
 		<>
-			<div className="mx-auto mt-3">
-				<div className="mt-5 mx-auto">
+			<ul className="mx-auto mt-3">
+				<li className="mx-auto">
 					<h2 className="text-center">Choose type:</h2>
+					<h1>{props.match.params.id}</h1>
 					<Link to="/details" className="btn btn-success text-light m-1">
 						Microgreen
 					</Link>
-					<h1>{props.match.params.id}</h1>
 					<Link to="/details" className="btn btn-success text-light m-1">
 						Mature Plant
 					</Link>
-				</div>
-			</div>
+				</li>
+			</ul>
 			{/* <div className="text-align-left m-2">
                 <ul>
                     <b>Required Materials:</b>

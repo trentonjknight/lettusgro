@@ -5,13 +5,17 @@
 /*
     General Styles
 */
+body{
+    background-color: rgb(245,242,238); 
+}
+
 .ogregreen{
     border:3px solid rgb(3, 182, 3)!important;
 }
 
 .comforta{
     font-family: 'Comfortaa';
-    font-size: 20px;
+    font-size:18px;
 }
 
 .pgtitles{
@@ -42,13 +46,6 @@
     width: 100%;
 }
 
-.bgstraw{
-    background-image: url("../img/strawhat.jpg");
-    // background-image: center;
-    // background-position: absolute;
-    // margin-bottom:40px;
-    // z-index: 99px;
-}
 
                     // Gauges Styling
 // html {
