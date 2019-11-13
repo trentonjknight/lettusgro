@@ -34,57 +34,120 @@ export const Smoothscroll = () => {
 				<p>
 					<img src={sprout} style={{ height: "300px", width: "300px" }} />
 				</p>
-				<p> Once registered, you will be able to create, archive, and monitor specific grow operations.</p>
+				{/* <p> Once registered, you will be able to create, archive, and monitor specific grow operations.</p> */}
+				<br />
+				<br />
 			</div>
-			<hr />
 			{/* fill-- quote card section */}
 			<div className="card bg-light">
 				<div className="card-body">
 					<blockquote className="blockquote mb-0">
-						<p>
-							<br />
-							<br />
-							Because microgreens are harvested right after germination, all the nutrients they need to
-							grow remain. When harvested at the right time they are very concentrated with nutrients, the
-							flavor and texture is also great.
+						<br />
+						<br />
+						<p className="arima">
+							Because microgreens are harvested soon after germination, all the nutrient content remain
+							concentrated. What
+							{"'"}s more is that they are a great source of beneficial plant compounds containing higher
+							vitamin, mineral and antioxidant levels than the same quantity of mature greens.
 						</p>
 						<footer className="blockquote-footer">
-							Someone famous in <cite title="Source Title">Mother Nature Network</cite>
+							Editor at <cite title="Source Title">Mother Nature Network</cite>
 						</footer>
 						<br />
 						<br />
+						<div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+							<div className="carousel-inner">
+								<div className="carousel-item active">
+									<img
+										src="https://res.cloudinary.com/devryan/image/upload/v1573661442/projects/4geeks/bamboo-bamboo-whisk-board-bowls-461428_l9sh2t.jpg"
+										className="d-block w-100"
+										alt="..."
+									/>
+								</div>
+								<div className="carousel-item">
+									<img
+										src="https://res.cloudinary.com/devryan/image/upload/v1573661441/projects/4geeks/basil-leaves-and-avocado-on-sliced-bread-on-white-ceramic-1351238_yl7bq9.jpg"
+										className="d-block w-100"
+										alt="..."
+									/>
+								</div>
+								<div className="carousel-item">
+									<img
+										src="https://res.cloudinary.com/devryan/image/upload/v1573661441/projects/4geeks/cook-cooking-cuisine-delicious-357737_yfthlf.jpg"
+										className="d-block w-100"
+										alt="..."
+									/>
+								</div>
+								<div className="carousel-item">
+									<img
+										src="https://res.cloudinary.com/devryan/image/upload/v1573661441/projects/4geeks/green-leaves-in-clear-glass-cup-1638278_bf2kjo.jpg"
+										className="d-block w-100"
+										alt="..."
+									/>
+								</div>
+								<div className="carousel-item">
+									<img
+										src="https://res.cloudinary.com/devryan/image/upload/v1573661441/projects/4geeks/photo-of-green-broccoli-white-cheese-and-green-cabbage-on-772508_cgeonn.jpg"
+										className="d-block w-100"
+										alt="..."
+									/>
+								</div>
+								<div className="carousel-item">
+									<img
+										src="https://res.cloudinary.com/devryan/image/upload/v1573661442/projects/4geeks/closeup-photo-of-mint-461246_ppmiql.jpg"
+										className="d-block w-100"
+										alt="..."
+									/>
+								</div>
+							</div>
+							<a
+								className="carousel-control-prev"
+								href="#carouselExampleControls"
+								role="button"
+								data-slide="prev">
+								<span className="carousel-control-prev-icon" aria-hidden="true" />
+								<span className="sr-only">Previous</span>
+							</a>
+							<a
+								className="carousel-control-next"
+								href="#carouselExampleControls"
+								role="button"
+								data-slide="next">
+								<span className="carousel-control-next-icon" aria-hidden="true" />
+								<span className="sr-only">Next</span>
+							</a>
+						</div>
 					</blockquote>
 				</div>
 			</div>
 			{/* "Plants Section" */}
-			<ScrollableAnchor id={"plants"}>
-				<div className="pb-4" />
-			</ScrollableAnchor>
-			<h1 className="mx-auto mt-5 mb-4 pgtitles">What would you like to grow?</h1>
-			<div className="container">
-				<div className="row">
-					{store.plants.map((item, index) => {
-						return (
-							<div key={index} className="col-4 mb-4 text-center">
-								<div className="card bg-light border-dark" style={{ border: "3px solid grey" }}>
-									<Link to={"/selection/" + index}>
-										<div>
-											<img src={item.url} width="100%" height="100%" alt="..." />
-										</div>
-										<div className="card-footer card-text text-dark" style={{ fontSize: "23px" }}>
-											{item.common_name}
-										</div>
-									</Link>
+			<div className="bg-plants">
+				<ScrollableAnchor id={"plants"}>
+					<div className="pb-4" />
+				</ScrollableAnchor>
+				<h1 className="mx-auto mt-5 mb-4 pgtitles text-center">What would you like to grow?</h1>
+				<div className="container">
+					<div className="row">
+						{store.plants.map((item, index) => {
+							return (
+								<div key={index} className="col-4 mb-4 text-center">
+									<div className="card bg-light border-dark" style={{ border: "3px solid grey" }}>
+										<Link to={"/selection/" + index}>
+											<div>
+												<img src={item.url} width="100%" height="100%" alt="..." />
+											</div>
+											<div
+												className="card-footer card-text text-dark"
+												style={{ fontSize: "23px" }}>
+												{item.common_name}
+											</div>
+										</Link>
+									</div>
 								</div>
-							</div>
-						);
-					})}
+							);
+						})}
+					</div>
 				</div>
-			</div>
-			<div className="mx-auto mb-2">
-				<Link to="/">
-					<button className="btn btn-success text-light">Back home</button>
-				</Link>
 			</div>
 			{/* "mission Section" */}
 			<ScrollableAnchor id={"about"}>
