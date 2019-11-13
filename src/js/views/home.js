@@ -12,7 +12,7 @@ export const Home = () => (
 		<div id="link1" className="text-center pt-5 mt-3 bgstraw">
 			<h1>L E T T U S</h1>
 			<div className="tight">
-				<p className="comforta">
+				<p className="comforta FS">
 					A plant growth management application employing the Raspberry Pi and sensor technology to make
 					horticulture easy.
 				</p>
