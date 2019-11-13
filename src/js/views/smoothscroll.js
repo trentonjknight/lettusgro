@@ -59,7 +59,7 @@ export const Smoothscroll = () => {
 							<div className="carousel-inner">
 								<div className="carousel-item active">
 									<img
-										src="https://res.cloudinary.com/devryan/image/upload/v1573661442/projects/4geeks/bamboo-bamboo-whisk-board-bowls-461428_l9sh2t.jpg"
+										src="https://res.cloudinary.com/devryan/image/upload/v1573673432/projects/4geeks/matcha_edited_px070d.jpg"
 										className="d-block w-100"
 										alt="..."
 									/>
@@ -122,6 +122,9 @@ export const Smoothscroll = () => {
 			</div>
 			{/* "Plants Section" */}
 			<div className="bg-plants">
+				<br />
+				<br />
+				<br />
 				<ScrollableAnchor id={"plants"}>
 					<div className="pb-4" />
 				</ScrollableAnchor>
