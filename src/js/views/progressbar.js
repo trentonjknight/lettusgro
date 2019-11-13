@@ -1,6 +1,5 @@
 import React, { useState, useContext } from "react";
 import "../../styles/home.scss";
-import "react-step-progress-bar/styles.css";
 import { ProgressBar, Step } from "react-step-progress-bar";
 // import stepperplant from "../../img/progressstep1.png";
 
@@ -38,7 +37,7 @@ export const Progressbar = () => {
 								{({ accomplished }) => (
 									<img
 										style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
-										width="30"
+										width={item.width}
 										src={item.image}
 									/>
 								)}
