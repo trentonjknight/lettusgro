@@ -8,7 +8,7 @@ import bgstraw from "../../img/strawhatresized.png";
 import "../../styles/home.scss";
 import "react-step-progress-bar/styles.css";
 import { ProgressBar } from "react-step-progress-bar";
-import basilfarm from "../../img/basilfarm.jpg";
+import basilfarm from "../../img/raspberryfarm.jpg";
 import purrpcrop from "../../img/purplehaze.jpg";
 
 export const Smoothscroll = () => {
@@ -169,47 +169,62 @@ export const Smoothscroll = () => {
 					vegetables, and fruits!
 				</p>
 
-				<div className="ogregreen card mb-3">
-					<div className="row no-gutters">
-						<div className="col-md-4">
-							<img src={basilfarm} className="card-img" alt="..." />
+				<div className="bgcoloropacity1">
+					{/* first card with trent and ryan info */}
+					<div className="card bg-dark text-white">
+						<img src="..." className="card-img" alt="..." />
+						<div className="card-img-overlay">
+							<h5 className="card-title">Card title</h5>
+							<p className="card-text">
+								This is a wider card with supporting text below as a natural lead-in to additional
+								content. This content is a little bit longer.
+							</p>
+							<p className="card-text">Last updated 3 mins ago</p>
 						</div>
-						<div className="col-md-8">
-							<div className="card-body">
-								<h5 className="card-title" />
-								<p className="CT, card-text">
-									Plan, sow, grow, harvest, market, and succeed! The Lettus encyclopedia easily allows
-									for careful growing, and propogating of your own vegetation without any of the
-									dissatisfaction that often follows traditional gardening. Here at Lettus Gro farm,
-									we
-									{"'"}
-									ve combined our expert analysis, backed by scientific data, into one small web-based
-									resource, at your fingertips! but wait, where the real magic happens is; when
-									automated regulation mode is introduced with a little tech, in the form of a
-									Raspberry Pi. Lettus is a SMART garden monitoring system, complete with sensors for
-									soil moisture, sunlight, air quality, temperature, and humidity. The Raspberry pi
-									can send out alerts directly to the user, check to see if the ph is balanced in
-									cases of hydrophonics cultivation, and much much more! Notice that our mission is
-									positioned to align with your values from large businesses to small recreationalist
-									alike -- so please Lettus grow with you :)
-								</p>
-								<p className="card-text">
-									<small className="text-muted">Last updated 3 mins ago</small>
-								</p>
+					</div>
+					second card
+					<div className="ogregreen card mb-3">
+						<div className="row no-gutters">
+							<div className="col-md-4">
+								<img src={basilfarm} className="card-img" alt="..." />
+							</div>
+							<div className="col-md-8">
+								<div className="card-body">
+									<h5 className="card-title" />
+									<p className="CT, card-text">
+										Plan, sow, grow, harvest, market, and succeed! The Lettus encyclopedia easily
+										allows for careful growing, and propogating of your own vegetation without any
+										of the dissatisfaction that often follows traditional gardening. Here at Lettus
+										Gro farm, we
+										{"'"}
+										ve combined our expert analysis, backed by scientific data, into one small
+										web-based resource, at your fingertips! but wait, where the real magic happens
+										is; when a little tech is introduced in the form of, Raspberry Pi.
+									</p>
+									<p className="card-text">
+										<small className="text-muted">
+											Notice that our mission is positioned to align with your values from large
+											businesses to small recreationalist alike -- so please Lettus grow with you
+											:)
+										</small>
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<div className="ogregreen card bg-dark text-white">
-					<img src={purrpcrop} className="card-img" alt="..." />
-					<div className="card-img-overlay">
-						<h5 className="card-title">Card title</h5>
-						<p className="card-text">
-							This is a wider card with supporting text below as a natural lead-in to additional content.
-							This content is a little bit longer.
-						</p>
-						<p className="card-text">Last updated 3 mins ago</p>
+					<div className="ogregreen card bg-dark text-white text-center">
+						<img src={purrpcrop} className="card-img" alt="..." />
+						<div className="card-img-overlay">
+							<div className="bgcoloropacity2">
+								<p className="comforta textsizing ">
+									Lettus is a SMART garden monitoring system, complete with sensors for soil moisture,
+									sunlight, air quality, temperature, and humidity. The Raspberry can send out alerts
+									directly to the user, check to see if the ph is balanced in cases of hydrophonics
+									cultivation, and much much more!
+								</p>
+							</div>
+							{/* <p className="card-text">Last updated 3 mins ago</p> */}
+						</div>
 					</div>
 				</div>
 			</div>

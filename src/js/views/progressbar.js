@@ -11,10 +11,10 @@ export const Progressbar = () => {
 	const [count, setCount] = useState(0);
 	const { store, actions } = useContext(Context);
 	// if (this.state.activePlayer === 2) {
-	//      setTimeout(function() {
-	//          test();
-	//      }, 5000);
-	//  }
+	// 	setTimeout(function() {
+	// 		test();
+	// 	}, 5000);
+	// }
 	function test() {
 		setCount(count + 25);
 		if (count >= 100) {
