@@ -27,10 +27,8 @@ export const Home = () => (
 			<p>
 				<img src={sprout} style={{ height: "300px", width: "300px" }} />
 			</p>
-<<<<<<< HEAD
-=======
+
 			{/* <p> Once registered, you will be able to create, archive, and monitor specific grow operations.</p> */}
->>>>>>> 49f18ecad823d29ed792c9be920e8efcef7fa3d8
 		</div>
 	</>
 );
