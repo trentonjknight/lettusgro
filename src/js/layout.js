@@ -32,7 +32,7 @@ export const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Switch>
-						<Route exact path="/" component={Home} />
+						<Route exact path="/" component={Smoothscroll} />
 						<Route path="/login" component={Login} />
 						<Route path="/plants" component={Plants} />
 						<Route path="/details/:theid" component={Singlecrop} />
@@ -41,7 +41,7 @@ export const Layout = () => {
 						<Route path="/register" component={Register} />
 						<Route path="/about" component={About} />
 						<Route path="/progress" component={Progressbar} />
-						<Route path="/smooth" component={Smoothscroll} />
+						{/* <Route path="/smooth" component={Smoothscroll} /> */}
 						<Route path="/cropmonitor" component={Gauges} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
