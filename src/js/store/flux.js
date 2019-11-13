@@ -11,7 +11,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				})
 					.then(res => res.json())
 					.then(data => {
-						console.log(data);
+						//console.log(data);
 						props.history.push("/login");
 					})
 					.catch(error => alert("error", JSON.stringify(error)));
@@ -31,7 +31,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 					.catch(error => {
 						alert("Something Went Wrong, Try again");
-						console.log("Error:", error);
+						//console.log("Error:", error);
 					});
 			},
 			getPlant: name => {
@@ -46,31 +46,26 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			progressbar: [
 				{
-					style: "{{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}",
 					width: "30",
 					image:
 						"https://res.cloudinary.com/devryan/image/upload/v1573684950/projects/4geeks/sprout_1_xbzui8.png"
 				},
 				{
-					// style:"{{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}",
 					width: "30",
 					image:
 						"https://res.cloudinary.com/devryan/image/upload/v1573684950/projects/4geeks/sprout_2_txzz1v.png"
 				},
 				{
-					// style:"{{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}",
 					width: "30",
 					image:
 						"https://res.cloudinary.com/devryan/image/upload/v1573684950/projects/4geeks/sprout_3_ee7zdq.png"
 				},
 				{
-					// style:"{{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}",
 					width: "30",
 					image:
 						"https://res.cloudinary.com/devryan/image/upload/v1573684950/projects/4geeks/sprout_4_fczf9b.png"
 				},
 				{
-					// style:"{{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}",
 					width: "30",
 					image:
 						"https://res.cloudinary.com/devryan/image/upload/v1573684950/projects/4geeks/sprout_5_w1grf4.png"
