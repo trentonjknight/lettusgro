@@ -1,4 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
+import { Context } from "../store/appContext";
+import { Link } from "react-router-dom";
 
 const Gauges = props => {
 	return (
@@ -46,6 +49,11 @@ const Gauges = props => {
 					<figcaption>w/ Percentage</figcaption>
 				</figure>
 			)}
+			<div>
+				<Link to="/plants">
+					<button className="btn btn-success">Back to plants</button>
+				</Link>
+			</div>
 		</>
 	);
 };

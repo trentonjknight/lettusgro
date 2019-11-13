@@ -94,9 +94,11 @@ export const Singlecrop = props => {
 								</tbody>
 							</table>
 							<div className="d-flex justify-content-center mb-4">
-								<a className="btn btn-success btn-lg mr-4" href="#" role="button">
-									Start New {plant} Harvest!
-								</a>
+								<Link to="/cropmonitor">
+									<a className="btn btn-success btn-lg mr-4" href="#" role="button">
+										Start New {plant} Harvest!
+									</a>
+								</Link>
 								<Link to="/plants">
 									<a className="btn btn-success btn-lg" href="#" role="button">
 										Return to Plants

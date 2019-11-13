@@ -46,7 +46,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			progressbar: [
 				{
-					// style:"{{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}",
+					style: "{{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}",
 					width: "30",
 					image:
 						"https://uc921030d65ec74710e3f2a1e85d.previews.dropboxusercontent.com/p/thumb/AAnj6wYHkoQp3o1irOfbOaG7h8jqnTBm5woiM_Srb6YmaxON8Vlx2luoZpeeCndjOLqpEoHZz9A4KGfhcHbAMZjF7JanBaZpG2h8EhZ5z1Czharsk5crd12O8pgQ0OyBQvnExckwLTDrHJpXZi2Cp3JRKG_IWiSNbFkSyXeSfyg15iSWDMIuayYB4pzpFT2qeprRI3_3VuBAcMUhGNWWAOBNAoOEHZo073Gg1WFj5jcrhcx_1TdwTNG2J3YTZ0cM6nrrhU6gHhep93SKMAxP4FpJKewISA3YYrjeqHbQSF5fbW7c-wnzQYFwUspqKybDS0IlHhR-HL-Ujt5gVGzU98WWb0cdpJDsYL8LaGEeA7ZLJyB6-fSyM4CnqylhghQ8itaaxFzLV1VRg1kVwOp9xywh/p.png?fv_content=true&size_mode=5"
@@ -97,7 +97,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					days_to_maturity: "55-60",
 					germination: "5-10 days",
 					water:
-						"Water regularly, being careful not to overwater. Allow soil to go almost dry between watering, then soak thoroughly."
+						"Water regularly, being careful not to overwater. Allow growing medium to go almost dry between watering, then soak thoroughly."
 				},
 				{
 					slug: "ocimum",
@@ -117,11 +117,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 					days_to_maturity: "~68",
 					germination: "5-10 days",
 					water:
-						"Water regularly, being careful not to overwater. Allow soil to go completely dry between watering, then soak thoroughly."
+						"Water regularly, being careful not to overwater. Allow growing medium to go completely dry between watering, then soak thoroughly."
 				},
 				{
 					slug: "brassica-oleracea",
-					common_name: "Kale (cabbage)",
+					common_name: "Kale",
 					scientific_name: "Brassica oleracea",
 					link: "http://trefle.io/api/plants/112492",
 					id: 112492,
@@ -158,23 +158,97 @@ const getState = ({ getStore, getActions, setStore }) => {
 					water: "Bottom water or mist. Maintain even moisture and do not allow sowing medium to dry out."
 				},
 				{
-					slug: "",
-					common_name: "Amaranth",
-					scientific_name: "",
-					link: "http://trefle.io/api/plants/112492",
-					id: 112492,
+					slug: "raphanus",
+					common_name: "Radish",
+					scientific_name: "Raphanus sativus",
+					link: "http://trefle.io/api/plants/173976",
+					id: 173976,
 					url:
-						"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Basket_of_broccoli_in_Singapore_market.jpg/800px-Basket_of_broccoli_in_Singapore_market.jpg",
+						"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Radish_3371103037_4ab07db0bf_o.jpg/800px-Radish_3371103037_4ab07db0bf_o.jpg",
 					temperature_minimum: "65",
 					temperature_maximum: "75",
-					ph_minimum: "",
-					ph_maximum: "",
+					ph_minimum: "6.5",
+					ph_maximum: "7",
 					mature_height: '12-18"',
-					humidity: "",
-					pairings: "",
-					days_to_maturity: "16-25",
-					germination: "",
-					water: ""
+					humidity: "50-100%",
+					pairings: "salads",
+					days_to_maturity: "10-15 days",
+					germination: "5-10 days",
+					water: "Bottom water or mist. Maintain even moisture and do not allow sowing medium to dry out."
+				},
+				{
+					slug: "clematis-verticillaris-var-cacuminis",
+					common_name: "Carrot",
+					scientific_name: "Daucus carota",
+					link: "http://trefle.io/api/plants/127363",
+					id: 127363,
+					url:
+						"https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Carrots_at_a_farmers_market_in_the_Villages_Florida.png/800px-Carrots_at_a_farmers_market_in_the_Villages_Florida.png",
+					temperature_minimum: "65",
+					temperature_maximum: "75",
+					ph_minimum: "6.5",
+					ph_maximum: "7",
+					mature_height: '12-18"',
+					humidity: "50-100%",
+					pairings: "salads",
+					days_to_maturity: "10-25 days",
+					germination: "5-10 days",
+					water: "Bottom water or mist. Maintain even moisture and do not allow sowing medium to dry out."
+				},
+				{
+					slug: "liliales",
+					common_name: "Scallion",
+					scientific_name: "Allium fistulosum",
+					link: "http://trefle.io/api/plants/103631",
+					id: 103631,
+					url: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Cong-Guizhou.jpg",
+					temperature_minimum: "65",
+					temperature_maximum: "75",
+					ph_minimum: "6.5",
+					ph_maximum: "7",
+					mature_height: '12-18"',
+					humidity: "50-100%",
+					pairings: "asian style soups and salads, picadillo, fried rice, salsa",
+					days_to_maturity: "16-25 days",
+					germination: "5-10 days",
+					water: "Bottom water or mist. Maintain even moisture and do not allow sowing medium to dry out."
+				},
+				{
+					slug: "eruca-vesicaria-var-stenocarpa",
+					common_name: "Arugula",
+					scientific_name: "Eruca vesicaria var. stenocarpa",
+					link: "http://trefle.io/api/plants/134934",
+					id: 134934,
+					url:
+						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw0078b666/images/products/vegetables/00385_01_arugula.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196",
+					temperature_minimum: "65",
+					temperature_maximum: "75",
+					ph_minimum: "6",
+					ph_maximum: "7",
+					mature_height: '12-18"',
+					humidity: "50-100%",
+					pairings: "salads",
+					days_to_maturity: "40 days",
+					germination: "5-10 days",
+					water: "Bottom water or mist. Maintain even moisture and do not allow sowing medium to dry out."
+				},
+				{
+					slug: "beta-vulgaris-var-cicla",
+					common_name: "Beet",
+					scientific_name: "Beta vulgaris",
+					link: "http://trefle.io/api/plants/111288",
+					id: 111288,
+					url: "https://upload.wikimedia.org/wikipedia/commons/2/21/Beets-Bundle.jpg",
+					temperature_minimum: "65",
+					temperature_maximum: "75",
+					ph_minimum: "6",
+					ph_maximum: "7",
+					mature_height: '12-18"',
+					humidity: "50-100%",
+					pairings: "salads",
+					days_to_maturity: "10-15 days",
+					germination: "5-10 days",
+					water: "Bottom water or mist. Maintain even moisture and do not allow sowing medium to dry out."
 				}
 			]
 		}
