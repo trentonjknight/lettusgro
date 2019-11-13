@@ -132,9 +132,15 @@ export const Smoothscroll = () => {
 							return (
 								<div key={index} className="col-4 mb-4 text-center">
 									<div className="card bg-light border-dark" style={{ border: "3px solid grey" }}>
-										<Link to={"/selection/" + index}>
+										<Link to={"/details/" + index}>
 											<div>
-												<img src={item.url} width="100%" height="100%" alt="..." />
+												<img
+													src={item.url}
+													width="100%"
+													height="100%"
+													alt="..."
+													style={{ maxHeight: "230px" }}
+												/>
 											</div>
 											<div
 												className="card-footer card-text text-dark"
@@ -178,11 +184,11 @@ export const Smoothscroll = () => {
 									resource, at your fingertips! but wait, where the real magic happens is; when
 									automated regulation mode is introduced with a little tech, in the form of a
 									Raspberry Pi. Lettus is a SMART garden monitoring system, complete with sensors for
-									soil moisture, sunlight, air quality, temperature, and humidity. The Raspberry can
-									send out alerts directly to the user, check to see if the ph is balanced in cases of
-									hydrophonics cultivation, and much much more! Notice that our mission is positioned
-									to align with your values from large businesses to small recreationalist alike -- so
-									please Lettus grow with you :)
+									soil moisture, sunlight, air quality, temperature, and humidity. The Raspberry pi
+									can send out alerts directly to the user, check to see if the ph is balanced in
+									cases of hydrophonics cultivation, and much much more! Notice that our mission is
+									positioned to align with your values from large businesses to small recreationalist
+									alike -- so please Lettus grow with you :)
 								</p>
 								<p className="card-text">
 									<small className="text-muted">Last updated 3 mins ago</small>

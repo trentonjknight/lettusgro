@@ -14,14 +14,14 @@ export const Plants = () => {
 						return (
 							<div key={index} className="col-4 mb-4 text-center">
 								<div className="card bg-light border-dark" style={{ border: "3px solid grey" }}>
-									<Link to={"/selection/" + index}>
+									<Link to={"/details/" + index}>
 										<div>
 											<img
 												src={item.url}
 												width="100%"
 												height="100%"
 												alt="..."
-												style={{ maxHeight: "230px" }}
+												style={{ maxHeight: "200px" }}
 											/>
 										</div>
 										<div className="card-footer card-text text-dark" style={{ fontSize: "25px" }}>

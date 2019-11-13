@@ -32,7 +32,7 @@ export const Singlecrop = props => {
 				/>
 			</div>
 			<div className="jumbotron">
-				<h1 className="display-4">{plant}</h1>
+				<h1 className="display-4 text-center">{plant}</h1>
 				<p className="lead" />
 				<hr className="my-4" />
 
@@ -40,19 +40,21 @@ export const Singlecrop = props => {
 					<div className="row">
 						<div className="col-lg">
 							<table className="table singlecrop responsive card border-success ogregreen">
-								<thead>
-									<tr />
+								<thead className="text-center">
+									<tr>
+										<h2>Vital Information</h2>
+									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<tr>
+										{/* <tr>
 											<th scope="row">Difficulty:</th>
 											<td>
 												<img src={seedling} width="25px" height="20px" />
 												<img src={seedling} width="25px" height="20px" />
 												<img src={seedling} width="25px" height="20px" />
 											</td>
-										</tr>
+										</tr> */}
 										<tr>
 											<th scope="row">Scientific Name:</th>
 											<td>{species}</td>
@@ -94,9 +96,9 @@ export const Singlecrop = props => {
 								</tbody>
 							</table>
 							<div className="d-flex justify-content-center mb-4">
-								<Link to="/cropmonitor">
+								<Link to={"/cropmonitor/" + props.match.params.theid}>
 									<a className="btn btn-success btn-lg mr-4" href="#" role="button">
-										Start New {plant} Harvest!
+										Start New {plant} Crop!
 									</a>
 								</Link>
 								<Link to="/plants">
@@ -119,7 +121,7 @@ export const Singlecrop = props => {
 							</div>
 							<div className="text-align-right m-2">
 								<ul>
-									<h2>Required Materials:</h2>
+									<h3> Gather These Required Materials Before Starting New Crop:</h3>
 									<li>
 										For a scalable, mobile, indoor operation, a 14in x 36in x 54in wire rack will
 										house trays and lights

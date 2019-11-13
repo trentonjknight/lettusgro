@@ -2,12 +2,13 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-import { Home } from "./views/home";
-import { Gauges } from "./views/gauges";
+//import { Home } from "./views/home";
+//import { Gauges } from "./views/gauges";
+//import { Progressbar } from "./views/progressbar";
 import { Login } from "./views/login";
 import { Plants } from "./views/plants";
 import { Singlecrop } from "./views/singlecrop";
-import { Mainview } from "./views/mainview";
+import { Cropmonitor } from "./views/cropmonitor";
 import Selection from "./views/plantselection";
 import Register from "./views/register";
 import { About } from "./views/about";
@@ -15,8 +16,6 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
-
-import { Progressbar } from "./views/progressbar";
 
 import { Smoothscroll } from "./views/smoothscroll";
 
@@ -36,13 +35,11 @@ export const Layout = () => {
 						<Route path="/login" component={Login} />
 						<Route path="/plants" component={Plants} />
 						<Route path="/details/:theid" component={Singlecrop} />
-						<Route path="/mainview" component={Mainview} />
+						<Route path="/cropmonitor/:index" component={Cropmonitor} />
 						<Route path="/selection/:id" component={Selection} />
 						<Route path="/register" component={Register} />
 						<Route path="/about" component={About} />
-						<Route path="/progress" component={Progressbar} />
 						{/* <Route path="/smooth" component={Smoothscroll} /> */}
-						<Route path="/cropmonitor" component={Gauges} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Footer />
