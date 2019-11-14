@@ -11,13 +11,13 @@ export const Footer = () => (
 			<a className="footer-link" href="https://github.com/audioryan9">
 				Ryan
 			</a>
-			<div>
+			<div className="text-muted">
 				Icons made by{" "}
-				<a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+				<a className="text-muted" href="https://www.flaticon.com/authors/freepik" title="Freepik">
 					Freepik
 				</a>{" "}
 				from{" "}
-				<a href="https://www.flaticon.com/" title="Flaticon">
+				<a className="text-muted" href="https://www.flaticon.com/" title="Flaticon">
 					www.flaticon.com
 				</a>
 			</div>

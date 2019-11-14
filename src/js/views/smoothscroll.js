@@ -178,8 +178,16 @@ export const Smoothscroll = () => {
 						</div>
 					</div>
 					<p className="fontSize">
-						To inspire healthier communities by engaging people to harvest and benefit from microgreens,
-						herbs, vegetables, and fruits!
+						{" "}
+						Trenton and Ryan are both originally from South Florida, they met at 4Geeks programming academy
+						in downtown, Miami. each had a purpose to refine their knowledge in computer software and
+						programming. Along the way, several momentous occasions later, they soon discovered they had
+						shared interests in clean eating, and explored the opportunity to develop a startup right here
+						in our backyard. Tying together all that they've accrued along the way, incorporating modern
+						technology with early nomadic principality. They're message is to inspire healthier communities
+						by engaging people to harvest and benefit from microgreens, herbs, vegetables, and fruits! At
+						Lettus our mission is positioned to align with your values from large businesses to small
+						recreationalist alike -- so please Lettus grow with you :)
 					</p>
 					{/* second card */}
 					<div className="ogregreen card mb-3">
@@ -212,11 +220,6 @@ export const Smoothscroll = () => {
 						</div>
 					</div>
 					{/* third card */}
-					<p>
-						{" "}
-						Notice that our mission is positioned to align with your values from large businesses to small
-						recreationalist alike -- so please Lettus grow with you :)
-					</p>
 					<div className="ogregreen card bg-dark text-white text-center">
 						<img src={purrpcrop} className="card-img" alt="..." />
 						<div className="card-img-overlay">
