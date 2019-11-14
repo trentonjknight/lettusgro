@@ -16,13 +16,13 @@ export const Navbar = () => {
 						L E T T U S
 					</Link>
 
-				<Link to="/#plants">
-					<button className=" btn btn-light text-success m-1">Browse Plants</button>
-				</Link>
-				<Link to="/#about">
-					<button className=" btn btn-light text-success m-1">Our Mission</button>
-				</Link>
-				{/* <Link to="/about">
+					<Link to="/#plants">
+						<button className=" btn btn-light text-success m-1">Browse Plants</button>
+					</Link>
+					<Link to="/#about">
+						<button className=" btn btn-light text-success m-1">Our Mission</button>
+					</Link>
+					{/* <Link to="/about">
 					<button className=" btn btn-light text-success m-1">Our Mission</button>
 				</Link> */}
 				</div>
