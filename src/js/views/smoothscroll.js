@@ -133,7 +133,7 @@ export const Smoothscroll = () => {
 					<div className="row">
 						{store.plants.map((item, index) => {
 							return (
-								<div key={index} className="col-4 mb-4 text-center">
+								<div key={index} className="col-sm-12 col-md-4 mb-4 text-center">
 									<div className="card bg-light border-dark" style={{ border: "3px solid grey" }}>
 										<Link to={"/details/" + index}>
 											<div>

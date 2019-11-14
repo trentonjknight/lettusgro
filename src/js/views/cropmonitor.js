@@ -1,27 +1,38 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
 import { LinearGauge, RadialGauge } from "react-canvas-gauges";
-//import Chart from "react-google-charts";
-//import { Test } from "./test";
+import { ProgressBar, Step } from "react-step-progress-bar";
 
 export const Cropmonitor = props => {
 	const { store, actions } = useContext(Context);
 	let plant = store.plants[props.match.params.index].common_name;
+	let tempmin = store.plants[props.match.params.index].temperature_minimum;
+	let tempmax = store.plants[props.match.params.index].temperature_maximum;
+	let phmin = store.plants[props.match.params.index].ph_minimum;
+	let phmax = store.plants[props.match.params.index].ph_maximum;
+	let humid = store.plants[props.match.params.index].humidity;
+	const [count, setCount] = useState(0);
 
+	function test() {
+		setCount(count + 25);
+		if (count >= 100) {
+			setCount(0);
+		}
+	}
+	function counter() {
+		setTimeout(test, 2000);
+	}
 	return (
 		<>
 			<div className="mt-5">
 				<div className="text-center bg-dark text-light mt-4">
-					<h1>Crop Monitor</h1>
+					<h1>Crop Monitor ({plant})</h1>
 				</div>
 				<table className="table table-dark text-light text-center">
 					<thead>
 						<tr>
-							<th>
-								<h4 scope="col">Crop</h4>
-							</th>
 							<th>
 								<h4 scope="col">Temperature</h4>
 							</th>
@@ -35,22 +46,22 @@ export const Cropmonitor = props => {
 					</thead>
 					<tbody>
 						<tr>
-							<th scope="row">
-								<h4 className="mt-5">{plant}</h4>
-							</th>
 							<td>
 								<LinearGauge
 									units="°F"
-									title="Temperature"
-									value={0}
+									value={45}
 									minValue={0}
 									maxValue={100}
 									majorTicks={["0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "100"]}
 									minorTicks={1}
 									width="200"
-									height="500"
+									height="400"
 									colorNumbers={"red"}
-									colorTitle={"red"}
+									colorUnits={"red"}
+									highlights={[
+										{ from: 0, to: 50, color: "rgba(0, 191, 255,.35)" },
+										{ from: 50, to: 100, color: "rgba(255,0,0,.35)" }
+									]}
 								/>
 							</td>
 							<td>
@@ -58,6 +69,7 @@ export const Cropmonitor = props => {
 									units="pH"
 									title="pH Value"
 									value={0}
+									colorUnits={"red"}
 									minValue={0}
 									maxValue={14}
 									majorTicks={[
@@ -83,10 +95,19 @@ export const Cropmonitor = props => {
 									colorNumbers={"red"}
 									colorTitle={"red"}
 									highlights={[
-										{ from: 0, to: 3, color: "rgba(0,255,0,.15)" },
-										{ from: 3, to: 7, color: "rgba(255,255,0,.15)" },
-										{ from: 7, to: 10, color: "rgba(255,30,0,.25)" },
-										{ from: 10, to: 14, color: "rgba(255,0,225,.25)" }
+										{ from: 0, to: 1, color: "rgba(255,0,0,.35)" },
+										{ from: 1, to: 3, color: "rgba(255,140,0,.35)" },
+										{ from: 3, to: 4, color: "rgba(255,255,0,.35)" },
+										{ from: 4, to: 5, color: "rgba(0,255,0,.35)" },
+										{ from: 5, to: 6, color: "rgba(50,205,50,.35)" },
+										{ from: 6, to: 7, color: "rgba(0, 128, 0,.35)" },
+										{ from: 7, to: 8, color: "rgba(34, 139, 34,.35)" },
+										{ from: 8, to: 9, color: "rgba(127,255,212,.35)" },
+										{ from: 9, to: 10, color: "rgba(0, 191, 255,.35)" },
+										{ from: 10, to: 11, color: "rgba(30, 144, 255,.35)" },
+										{ from: 11, to: 12, color: "rgba(0, 0, 139,.35)" },
+										{ from: 12, to: 13, color: "rgba(138, 43, 226,.35)" },
+										{ from: 13, to: 14, color: "rgba(128, 0, 128,.35)" }
 									]}
 								/>
 							</td>
@@ -95,24 +116,63 @@ export const Cropmonitor = props => {
 									units="%"
 									title="% Humidity"
 									colorNumbers={"red"}
-									value={0}
+									colorUnits={"red"}
+									value={70}
 									minValue={0}
 									maxValue={100}
 									majorTicks={["0", "25", "50", "75", "100"]}
 									minorTicks={1}
-									height="300"
+									height={300}
 									colorTitle={"red"}
-									width="300"
+									width={300}
 									animationRule={"bounce"}
-									animationDuration={"100"}
-									animatedValue={"true"}
+									animationDuration={100}
+									animatedValue={true}
 								/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								{" "}
+								<h4>
+									Ideal: {tempmin} - {tempmax}
+								</h4>
+							</td>
+							<td>
+								{" "}
+								<h4>
+									Ideal: {phmin} - {phmax}
+								</h4>
+							</td>
+							<td>
+								{" "}
+								<h4>Ideal: {humid}</h4>
 							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
-			<div className=" text-align-left m-2">
+			<div className="text-center">
+				<h1>Crop Progress</h1>
+			</div>
+			<div className="m-3 p-5 card ogregreen">
+				<ProgressBar percent={count} filledBackground="linear-gradient(to right, #f2e6ff, #8000ff)">
+					{store.progressbar.map((item, index) => {
+						return (
+							<Step key={index} transition="scale">
+								{({ accomplished }) => (
+									<img
+										style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
+										width={item.width}
+										src={item.image}
+									/>
+								)}
+							</Step>
+						);
+					})}
+				</ProgressBar>{" "}
+			</div>
+			<div className="card ogregreen text-align-left p-2 m-2">
 				<ol>
 					<h2> Hydroponic Crop Instructions:</h2>
 					<h4>
@@ -144,7 +204,9 @@ export const Cropmonitor = props => {
 				</ol>
 			</div>
 			<div className="mx-auto">
-				<button className="btn btn-success text-light">Begin Countdown to Harvest</button>
+				<button onClick={counter} className="btn btn-success text-light">
+					Begin Countdown to Harvest
+				</button>
 			</div>
 			<div className="mx-auto m-3">
 				<Link to="/plants">
