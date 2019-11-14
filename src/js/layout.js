@@ -3,8 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 //import { Home } from "./views/home";
-//import { Gauges } from "./views/gauges";
-//import { Progressbar } from "./views/progressbar";
+import { Progressbar } from "./views/progressbar";
 import { Login } from "./views/login";
 import { Plants } from "./views/plants";
 import { Singlecrop } from "./views/singlecrop";
@@ -39,6 +38,7 @@ export const Layout = () => {
 						<Route path="/selection/:id" component={Selection} />
 						<Route path="/register" component={Register} />
 						<Route path="/about" component={About} />
+						<Route path="/progress" component={Progressbar} />
 						{/* <Route path="/smooth" component={Smoothscroll} /> */}
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>

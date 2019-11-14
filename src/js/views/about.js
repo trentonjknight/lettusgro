@@ -23,9 +23,9 @@ export const About = () => {
 						<div className="card-body">
 							<h5 className="card-title" />
 							<p className="CT, card-text">
-								Plan, sow, grow, harvest, market, and succeed! The Lettus encyclopedia easily allows for
-								careful growing, and propogating of your own vegetation without any of the
-								dissatisfaction that often follows traditional gardening. Here at Lettus Gro farm, we
+								Plan, sow, grow, harvest, market, and succeed! The Lettus application easily allows for
+								careful growing, and propogating your own vegetation without any of the dissatisfaction
+								that often follows traditional gardening. Here at Lettus, we
 								{"'"}
 								ve combined our expert analysis, backed by scientific data, into one small web-based
 								resource, at your fingertips! but wait, where the real magic happens is; when automated
@@ -47,7 +47,7 @@ export const About = () => {
 			<div className="ogregreen card bg-dark text-white">
 				<img src={purrpcrop} className="card-img" alt="..." />
 				<div className="card-img-overlay">
-					<h5 className="card-title">Card title</h5>
+					<h5 className="card-title" />
 					<p className="card-text">
 						This is a wider card with supporting text below as a natural lead-in to additional content. This
 						content is a little bit longer.
