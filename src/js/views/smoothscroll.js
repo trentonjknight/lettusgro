@@ -39,7 +39,7 @@ export const Smoothscroll = () => {
 				<br />
 			</div>
 			{/* fill-- quote card section */}
-			<div className="card bg-light">
+			<div className="card bg-light ogregreen">
 				<div className="card-body">
 					<blockquote className="blockquote mb-0">
 						<br />
@@ -162,7 +162,7 @@ export const Smoothscroll = () => {
 			<ScrollableAnchor id={"about"}>
 				<div className="pb-2" />
 			</ScrollableAnchor>
-			<div className="about, bg-about text-center pt-5 mt-5">
+			<div className="about, bg-about text-center pt-5">
 				<h1 className="pgtitles">Our Mission</h1>
 				<p className="fontSize">
 					To inspire healthier communities by engaging people to harvest and benefit from microgreens, herbs,

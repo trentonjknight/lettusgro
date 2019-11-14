@@ -1,41 +1,113 @@
 import React, { useContext } from "react";
-//import Gauges from "./gauges";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
+import { LinearGauge, RadialGauge } from "react-canvas-gauges";
+//import Chart from "react-google-charts";
+//import { Test } from "./test";
 
 export const Cropmonitor = props => {
 	const { store, actions } = useContext(Context);
 	let plant = store.plants[props.match.params.index].common_name;
+
 	return (
 		<>
-			<div className="mt-3">
-				<table className="table table-dark text-light text-center mt-5">
+			<div className="mt-5">
+				<div className="text-center bg-dark text-light mt-4">
+					<h1>Crop Monitor</h1>
+				</div>
+				<table className="table table-dark text-light text-center">
 					<thead>
 						<tr>
-							<th scope="col">Crop</th>
-							<th scope="col">Progress</th>
-							<th scope="col">Temperature</th>
-							<th scope="col">pH Level</th>
-							<th scope="col">Humidity</th>
+							<th>
+								<h4 scope="col">Crop</h4>
+							</th>
+							<th>
+								<h4 scope="col">Temperature</h4>
+							</th>
+							<th>
+								<h4 scope="col">pH Level</h4>
+							</th>
+							<th>
+								<h4 scope="col">Humidity</h4>
+							</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<th scope="row">{plant}</th>
-							{/* OLD GAUGES!!!
-                            <td>
-								<Gauges color="prog" />
+							<th scope="row">
+								<h4 className="mt-5">{plant}</h4>
+							</th>
+							<td>
+								<LinearGauge
+									units="°F"
+									title="Temperature"
+									value={0}
+									minValue={0}
+									maxValue={100}
+									majorTicks={["0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "100"]}
+									minorTicks={1}
+									width="200"
+									height="500"
+									colorNumbers={"red"}
+									colorTitle={"red"}
+								/>
 							</td>
 							<td>
-								<Gauges color="red" />
+								<RadialGauge
+									units="pH"
+									title="pH Value"
+									value={0}
+									minValue={0}
+									maxValue={14}
+									majorTicks={[
+										"0",
+										"1",
+										"2",
+										"3",
+										"4",
+										"5",
+										"6",
+										"7",
+										"8",
+										"9",
+										"10",
+										"11",
+										"12",
+										"13",
+										"14"
+									]}
+									minorTicks={5}
+									width={300}
+									height={300}
+									colorNumbers={"red"}
+									colorTitle={"red"}
+									highlights={[
+										{ from: 0, to: 3, color: "rgba(0,255,0,.15)" },
+										{ from: 3, to: 7, color: "rgba(255,255,0,.15)" },
+										{ from: 7, to: 10, color: "rgba(255,30,0,.25)" },
+										{ from: 10, to: 14, color: "rgba(255,0,225,.25)" }
+									]}
+								/>
 							</td>
 							<td>
-								<Gauges color="blue" />
+								<RadialGauge
+									units="%"
+									title="% Humidity"
+									colorNumbers={"red"}
+									value={0}
+									minValue={0}
+									maxValue={100}
+									majorTicks={["0", "25", "50", "75", "100"]}
+									minorTicks={1}
+									height="300"
+									colorTitle={"red"}
+									width="300"
+									animationRule={"bounce"}
+									animationDuration={"100"}
+									animatedValue={"true"}
+								/>
 							</td>
-							<td>
-								<Gauges />
-							</td> */}
 						</tr>
 					</tbody>
 				</table>
@@ -43,6 +115,11 @@ export const Cropmonitor = props => {
 			<div className=" text-align-left m-2">
 				<ol>
 					<h2> Hydroponic Crop Instructions:</h2>
+					<h4>
+						Follow the steps outlined below, then click the begin countdown button when you have completed
+						them to start the countdown until harvest, and receive SMS notifications for watering, lighting,
+						and time until harvest.
+					</h4>
 					<li>Boil coconut fiber pad(s) in clean tap water 10 mins on high.</li>
 					<li>Soak pads past boil for 24 hours.</li>
 					<li>pH water to recommended range using lemon juice if necessary</li>
@@ -67,6 +144,9 @@ export const Cropmonitor = props => {
 				</ol>
 			</div>
 			<div className="mx-auto">
+				<button className="btn btn-success text-light">Begin Countdown to Harvest</button>
+			</div>
+			<div className="mx-auto m-3">
 				<Link to="/plants">
 					<button className="btn btn-success">Back to plants</button>
 				</Link>

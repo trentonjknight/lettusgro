@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 //import { Home } from "./views/home";
-//import { Gauges } from "./views/gauges";
 import { Progressbar } from "./views/progressbar";
 import { Login } from "./views/login";
 import { Plants } from "./views/plants";
