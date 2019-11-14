@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900,900i&display=swap');
 
 .bgstraw{
     background-image: url("../img/strawhatresized.png");
@@ -29,5 +30,24 @@
 
 .textsizing{
     font-size: 21px;
+}
+
+.cardSize{
+    height: 60%;
+}
+.picSize{
+    width: 100%;
+    height: 50%;
+}
+.aboutbannerFONT{
+    font-family: 'Playfair Display', serif;
+}
+
+.bigFont{
+    font-size: 200px;
+}
+
+.Wht{
+    color: white;
 }
                         // SS Functionality

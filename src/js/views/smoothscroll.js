@@ -164,25 +164,24 @@ export const Smoothscroll = () => {
 			</ScrollableAnchor>
 			<div className="about, bg-about text-center pt-5 mt-5">
 				<h1 className="pgtitles">Our Mission</h1>
-				<p className="fontSize">
-					To inspire healthier communities by engaging people to harvest and benefit from microgreens, herbs,
-					vegetables, and fruits!
-				</p>
-
 				<div className="bgcoloropacity1">
 					{/* first card with trent and ryan info */}
-					<div className="card bg-dark text-white">
-						<img src="..." className="card-img" alt="..." />
+					<div className="card bg-about picSize">
+						<img
+							src="https://res.cloudinary.com/devryan/image/upload/v1573758397/projects/4geeks/aboutplantpng_ev7yur.png"
+							className="card-img"
+							alt="..."
+						/>
 						<div className="card-img-overlay">
-							<h5 className="card-title">Card title</h5>
-							<p className="card-text">
-								This is a wider card with supporting text below as a natural lead-in to additional
-								content. This content is a little bit longer.
-							</p>
-							<p className="card-text">Last updated 3 mins ago</p>
+							<p className="aboutbannerFONT bigFont">Meet Trent & Ryan</p>
+							<h3 className="aboutbannerFONT Wht">our hearty founders</h3>
 						</div>
 					</div>
-					second card
+					<p className="fontSize">
+						To inspire healthier communities by engaging people to harvest and benefit from microgreens,
+						herbs, vegetables, and fruits!
+					</p>
+					{/* second card */}
 					<div className="ogregreen card mb-3">
 						<div className="row no-gutters">
 							<div className="col-md-4">
@@ -201,17 +200,23 @@ export const Smoothscroll = () => {
 										web-based resource, at your fingertips! but wait, where the real magic happens
 										is; when a little tech is introduced in the form of, Raspberry Pi.
 									</p>
-									<p className="card-text">
+									<p className="comforta">
 										<small className="text-muted">
-											Notice that our mission is positioned to align with your values from large
-											businesses to small recreationalist alike -- so please Lettus grow with you
-											:)
+											Raspberry Pi is a low-cost credit card sized computer which allows for
+											controlling electronic components, learn programming skills, build hardware
+											projects, do home automation, and even use them in industrial applications.
 										</small>
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
+					{/* third card */}
+					<p>
+						{" "}
+						Notice that our mission is positioned to align with your values from large businesses to small
+						recreationalist alike -- so please Lettus grow with you :)
+					</p>
 					<div className="ogregreen card bg-dark text-white text-center">
 						<img src={purrpcrop} className="card-img" alt="..." />
 						<div className="card-img-overlay">
