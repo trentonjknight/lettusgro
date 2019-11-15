@@ -77,6 +77,7 @@
 		"prop-types": "^15.6.1",
 		"react": "^16.8.4",
 		"react-canvas-gauges": "^1.2.1",
+		"react-device-detect": "^1.9.10",
 		"react-dom": "^16.8.4",
 		"react-google-charts": "^3.0.15",
 		"react-polyfills": "0.0.1",
