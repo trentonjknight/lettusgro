@@ -41,6 +41,15 @@ const getState = ({ getStore, getActions, setStore }) => {
 						setStore({ plant: data });
 						alert("Plant Received");
 					});
+			},
+			sendMsg: sms => {
+				fetch("https://3000-b7502b17-1c67-4583-8012-9cd42c597a0a.ws-us02.gitpod.io/sendmsg", {
+					method: "POST",
+					body: JSON.stringify({ message: sms }),
+					headers: {
+						"Content-Type": "application/json"
+					}
+				}).catch(err => console.log("sendMsg ERROR:", err));
 			}
 		},
 		store: {

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
@@ -14,16 +14,21 @@ export const Cropmonitor = props => {
 	let phmax = store.plants[props.match.params.index].ph_maximum;
 	let humid = store.plants[props.match.params.index].humidity;
 	const [count, setCount] = useState(0);
+	const [runProgressBar, setRunProgressBar] = useState(false);
 
-	function test() {
-		setCount(count + 25);
-		if (count >= 100) {
-			setCount(0);
-		}
-	}
-	function counter() {
-		setTimeout(test, 2000);
-	}
+	useEffect(
+		() => {
+			if (runProgressBar) {
+				setTimeout(() => setCount(count + 25), 6000);
+				if (count === 25) actions.sendMsg("Lettus notification: water your plants!");
+				if (count === 50) actions.sendMsg("Lettus notification: Turn on the lights!");
+			}
+			if (count === 75) setRunProgressBar(false);
+			if (count === 100) actions.sendMsg("Lettus notification: harvest time!");
+		},
+		[count, runProgressBar]
+	);
+
 	return (
 		<>
 			<div className="mt-5">
@@ -204,7 +209,15 @@ export const Cropmonitor = props => {
 				</ol>
 			</div>
 			<div className="mx-auto">
-				<button onClick={counter} className="btn btn-success text-light">
+				<button
+					onClick={() => {
+						if (count === 0) setRunProgressBar(true);
+						else if (count === 100) {
+							setCount(0);
+							setRunProgressBar(true);
+						}
+					}}
+					className="btn btn-success text-light">
 					Begin Countdown to Harvest
 				</button>
 			</div>
