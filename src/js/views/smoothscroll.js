@@ -168,7 +168,7 @@ export const Smoothscroll = () => {
 					{/* first card with trent and ryan info */}
 					<div className="card bg-about picSize">
 						<img
-							src="https://res.cloudinary.com/devryan/image/upload/v1573758397/projects/4geeks/aboutplantpng_ev7yur.png"
+							src="https://res.cloudinary.com/devryan/image/upload/v1573831148/projects/4geeks/aboutplantpng_kmhhqo.png"
 							className="card-img"
 							alt="..."
 						/>
@@ -177,18 +177,25 @@ export const Smoothscroll = () => {
 							<h3 className="aboutbannerFONT Wht">our hearty founders</h3>
 						</div>
 					</div>
-					<p className="fontSize">
-						{" "}
+					<p className="fontSize comforta aboutFontComforta">
+						<br />
+						<br />
+						<br />
 						Trenton and Ryan are both originally from South Florida, they met at 4Geeks programming academy
 						in downtown, Miami. each had a purpose to refine their knowledge in computer software and
 						programming. Along the way, several momentous occasions later, they soon discovered they had
 						shared interests in clean eating, and explored the opportunity to develop a startup right here
-						in our backyard. Tying together all that they've accrued along the way, incorporating modern
-						technology with early nomadic principality. They're message is to inspire healthier communities
-						by engaging people to harvest and benefit from microgreens, herbs, vegetables, and fruits! At
+						in our backyard. Tying together all that they have accrued along the way, incorporating modern
+						technology with early nomadic principality. Their message is to inspire healthier communities by
+						engaging people to harvest and benefit from microgreens, herbs, vegetables, and fruits! At
 						Lettus our mission is positioned to align with your values from large businesses to small
-						recreationalist alike -- so please Lettus grow with you :)
+						recreationalist alike --
 					</p>
+					<img
+						src="https://res.cloudinary.com/devryan/image/upload/v1573831460/projects/4geeks/soplslettusgrow_wvyo5v.png"
+						className="card-img imageSize"
+						alt="..."
+					/>
 					{/* second card */}
 					<div className="ogregreen card mb-3">
 						<div className="row no-gutters">
