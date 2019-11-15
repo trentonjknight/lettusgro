@@ -15,7 +15,7 @@ import blankpng from "../../img/blankpng.png";
 import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detect";
 
 export const Smoothscroll = () => {
-	const { store } = useContext(Context);
+	const { store, actions } = useContext(Context);
 
 	return (
 		<>
@@ -180,11 +180,11 @@ export const Smoothscroll = () => {
 								<h3 className="aboutbannerFONT Wht">our hearty founders</h3>
 							</div>
 						</div>
-						<p className="fontSize arima aboutFontComforta">
+						<p className="fontSize comforta aboutFontComforta">
 							<br />
 							<br />
 							Trenton and Ryan are both originally from South Florida, they met at 4Geeks programming
-							academy in downtown, Miami. each had a purpose to refine their knowledge in computer
+							academy in downtown, Miami. Each had a purpose to refine their knowledge in computer
 							software and programming. Along the way, several momentous occasions later, they soon
 							discovered they had shared interests in clean eating, and explored the opportunity to
 							develop a startup right here in our backyard. Tying together all that they have accrued
@@ -199,6 +199,30 @@ export const Smoothscroll = () => {
 							alt="..."
 						/>
 						{/* second card */}
+						<div className="card mb-3">
+							<div className="row no-gutters">
+								<div className="col-md-9">
+									<img
+										src="https://res.cloudinary.com/devryan/image/upload/v1573848082/projects/4geeks/IMG_9547_oxiwh1.jpg"
+										className="card-img"
+										alt="..."
+									/>
+								</div>
+								<div className="col-md-3">
+									<div className="card-body">
+										<h5 className="card-title">Card title</h5>
+										<p className="card-text arima fontIncrease">
+											This is a wider card with supporting text below as a natural lead-in to
+											additional content. This content is a little bit longer.
+										</p>
+										<p className="card-text">
+											<small className="text-muted">Last updated 3 mins ago</small>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						{/* third card */}
 						<div className=" card mb-3">
 							<div className="row no-gutters">
 								<div className="col-md-4">
@@ -207,7 +231,7 @@ export const Smoothscroll = () => {
 								<div className="col-md-8">
 									<div className="card-body">
 										<h5 className="card-title" />
-										<p className="CT, card-text">
+										<p className="CT, arima fontIncrease">
 											Plan, sow, grow, harvest, market, and succeed! The Lettus encyclopedia
 											easily allows for careful growing, and propogating of your own vegetation
 											without any of the dissatisfaction that often follows traditional gardening.
@@ -229,7 +253,7 @@ export const Smoothscroll = () => {
 								</div>
 							</div>
 						</div>
-						{/* third card */}
+						{/* fourth card */}
 						<div className=" card bg-dark text-white text-center">
 							<img src={purrpcrop} className="card-img" alt="..." />
 							<div className="card-img-overlay">
