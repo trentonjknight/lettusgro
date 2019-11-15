@@ -183,9 +183,9 @@ export const Smoothscroll = () => {
 						in downtown, Miami. each had a purpose to refine their knowledge in computer software and
 						programming. Along the way, several momentous occasions later, they soon discovered they had
 						shared interests in clean eating, and explored the opportunity to develop a startup right here
-						in our backyard. Tying together all that they've accrued along the way, incorporating modern
-						technology with early nomadic principality. They're message is to inspire healthier communities
-						by engaging people to harvest and benefit from microgreens, herbs, vegetables, and fruits! At
+						in our backyard. Tying together all that theyve accrued along the way, incorporating modern
+						technology with early nomadic principality. Their message is to inspire healthier communities by
+						engaging people to harvest and benefit from microgreens, herbs, vegetables, and fruits! At
 						Lettus our mission is positioned to align with your values from large businesses to small
 						recreationalist alike -- so please Lettus grow with you :)
 					</p>
