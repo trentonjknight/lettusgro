@@ -199,16 +199,16 @@ export const Smoothscroll = () => {
 							alt="..."
 						/>
 						{/* second card */}
-						<div className="card mb-3">
-							<div className="row no-gutters">
-								<div className="col-md-9">
-									<img
-										src="https://res.cloudinary.com/devryan/image/upload/v1573848082/projects/4geeks/IMG_9547_oxiwh1.jpg"
-										className="card-img"
-										alt="..."
-									/>
-								</div>
-								<div className="col-md-3">
+							<div className="card mb-3">
+								<div className="row no-gutters">
+									<div className="col-md-7">
+										<img
+											src="https://res.cloudinary.com/devryan/image/upload/v1573848082/projects/4geeks/IMG_9547_oxiwh1.jpg"
+											className="card-img"
+											alt="..."
+										/>
+									</div>
+								<div className="col-md-4">
 									<div className="card-body">
 										<h5 className="card-title">Card title</h5>
 										<p className="card-text arima fontIncrease">
