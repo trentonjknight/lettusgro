@@ -1,7 +1,7 @@
 import React from "react";
 import sprout from "../../img/Sprout2.png";
 import vine from "../../img/vine.png";
-import bgstraw from "../../img/strawhatresized.png";
+import bgstraw from "../../img/strawhatwithlogo.jpg";
 import "../../styles/home.scss";
 import { Link } from "react-router-dom";
 //import "react-step-progress-bar/styles.css";
@@ -23,10 +23,12 @@ export const Home = () => (
 			<Link to="/register">
 				<button className="btn btn-success btn-lg mb-3">Donate</button>
 			</Link>
-			{/* <ProgressBar percent={75} filledBackground="linear-gradient(to right, #fefb72, #f0bb31)" /> */}
-			<p>
+            {/* <ProgressBar percent={75} filledBackground="linear-gradient(to right, #fefb72, #f0bb31)" /> */}
+            
+			{/* <p>
 				<img src={sprout} style={{ height: "300px", width: "300px" }} />
-			</p>
+            </p> */}
+            
 		</div>
 	</>
 );

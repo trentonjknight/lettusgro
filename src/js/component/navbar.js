@@ -16,12 +16,12 @@ export const Navbar = () => {
 						L E T T U S
 					</Link>
 
-					<Link to="/#plants">
+					<a href="/#plants">
 						<button className=" btn btn-light text-success m-1">Browse Plants</button>
-					</Link>
-					<Link to="/#about">
+					</a>
+					<a href="/#about">
 						<button className=" btn btn-light text-success m-1">Our Mission</button>
-					</Link>
+					</a>
 					{/* <Link to="/about">
 					<button className=" btn btn-light text-success m-1">Our Mission</button>
 				</Link> */}
@@ -37,7 +37,7 @@ export const Navbar = () => {
 						</div>
 						<div className="m-1">
 							<Link to="/register">
-								<button className=" btn btn-dark text-light">Register</button>
+								<button className=" btn btn-dark text-light mr-1">Register</button>
 							</Link>
 						</div>
 					</>
