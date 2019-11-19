@@ -89,8 +89,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					scientific_name: "Coriandrum sativum",
 					link: "http://trefle.io/api/plants/123253",
 					id: 123253,
-					url:
-						"https://www.johnnyseeds.com/dw/image/v2/BBBW_PRD/on/demandware.static/-/Sites-jss-master/default/dw568033ca/images/products/herbs/03409g_01_leisure.jpg?sw=387&cx=302&cy=0&cw=1196&ch=1196",
+					url: "https://cdn.pixabay.com/photo/2019/06/06/08/00/coriander-4255400_1280.jpg",
 					temperature_minimum: "65",
 					temperature_maximum: "70",
 					ph_minimum: "6.5",
@@ -109,8 +108,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					scientific_name: "Ocimum",
 					link: "http://trefle.io/api/plants/159556",
 					id: 159556,
-					url:
-						"https://upload.wikimedia.org/wikipedia/commons/a/ac/BasilikumGenovesergro%C3%9Fbl%C3%A4ttriger.jpg",
+					url: "https://cdn.pixabay.com/photo/2018/05/16/10/38/basil-3405405_1280.jpg",
 					temperature_minimum: "65",
 					temperature_maximum: "70",
 					ph_minimum: "5.5",
@@ -129,8 +127,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					scientific_name: "Brassica oleracea",
 					link: "http://trefle.io/api/plants/112492",
 					id: 112492,
-					url:
-						"https://upload.wikimedia.org/wikipedia/commons/6/63/Brassica_oleracea_convar._capitata_var._alba%2C_spitskool_%281%29.jpg",
+					url: "https://res.cloudinary.com/devryan/image/upload/v1574199659/projects/4geeks/kale_anlu7f.jpg",
 					temperature_minimum: "40",
 					temperature_maximum: "70",
 					ph_minimum: "5.5",
