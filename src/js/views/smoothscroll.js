@@ -199,25 +199,35 @@ export const Smoothscroll = () => {
 							alt="..."
 						/>
 						{/* second card */}
-							<div className="card mb-3">
-								<div className="row no-gutters">
-									<div className="col-md-7">
-										<img
-											src="https://res.cloudinary.com/devryan/image/upload/v1573848082/projects/4geeks/IMG_9547_oxiwh1.jpg"
-											className="card-img"
-											alt="..."
-										/>
-									</div>
-								<div className="col-md-4">
+						<div className="card mb-3">
+							<div className="row no-gutters">
+								<div className="col-md-7">
+									<img
+										src="https://res.cloudinary.com/devryan/image/upload/v1573848082/projects/4geeks/IMG_9547_oxiwh1.jpg"
+										className="overlayImage card-img"
+									/>
+								</div>
+								<div className="col-md-5">
 									<div className="card-body">
-										<h5 className="card-title">Card title</h5>
-										<p className="card-text arima fontIncrease">
-											This is a wider card with supporting text below as a natural lead-in to
-											additional content. This content is a little bit longer.
+										<h5 className="card-title comforta">
+											What you
+											{"'"}
+											ll need
+										</h5>
+										<p className="CT, arima fontIncrease">
+											Package contents include: 1 Raspberry Pi mini-computer, 1 Arduino
+											Micro-controller, 1 Analog Ph sensor, 1 temperature, and 1 humidity sensor
+											built into the sensor {"hat"}
+											(Digital sensor package directly compatible with Raspberry Pi). All cables
+											included.
 										</p>
-										<p className="card-text">
-											<small className="text-muted">Last updated 3 mins ago</small>
-										</p>
+										<a
+											href="http://ebay.us/Dl7U1E?cmpnId=5338273189"
+											className="btn btn-light stretched-link"
+											target="_blank"
+											rel="noopener noreferrer">
+											purchase here
+										</a>
 									</div>
 								</div>
 							</div>

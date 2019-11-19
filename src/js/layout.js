@@ -31,6 +31,7 @@ export const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/" component={Smoothscroll} />
+						<Route exact path="/http://ebay.us/Dl7U1E?cmpnId=5338273189" component={Smoothscroll} />
 						<Route path="/login" component={Login} />
 						<Route path="/plants" component={Plants} />
 						<Route path="/details/:theid" component={Singlecrop} />
