@@ -72,4 +72,12 @@
 .opaqueGrnCover{
     color: rgba(19, 124, 59, 0.5);
 }
-                        // SS Functionality
+
+.overlayImage{
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+.overlayImage:hover {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
