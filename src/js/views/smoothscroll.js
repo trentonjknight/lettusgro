@@ -7,7 +7,6 @@ import vine from "../../img/vine.png";
 import bgstraw from "../../img/strawhatwithlogo.jpg";
 import "../../styles/home.scss";
 import "react-step-progress-bar/styles.css";
-import { ProgressBar } from "react-step-progress-bar";
 import basilfarm from "../../img/raspberryfarm.jpg";
 import purrpcrop from "../../img/purplehaze.jpg";
 import blankpng from "../../img/blankpng.png";
@@ -28,13 +27,9 @@ export const Smoothscroll = () => {
 							make horticulture easy.
 						</p>
 					</div>
-					{/* <h3>Register for free!</h3>
-		        <h4> Let us grow with you :)</h4> */}
 					<Link to="/register">
-						<button className="btn btn-success btn-lg mb-3">Donate</button>
+						<button className="btn btn-success btn-lg mb-3">Register</button>
 					</Link>
-					{/* <ProgressBar percent={75} filledBackground="linear-gradient(to right, #fefb72, #f0bb31)" /> */}
-					{/* let browser : */}
 					<p>
 						<img src={blankpng} style={{ height: "300px", width: "300px" }} />
 					</p>
@@ -125,9 +120,6 @@ export const Smoothscroll = () => {
 				</div>
 				{/* "Plants Section" */}
 				<div className="bg-plants">
-					<br />
-					<br />
-					<br />
 					<ScrollableAnchor id={"plants"}>
 						<div className="pb-4" />
 					</ScrollableAnchor>
@@ -183,15 +175,15 @@ export const Smoothscroll = () => {
 						<p className="fontSize comforta aboutFontComforta">
 							<br />
 							<br />
-							Trenton and Ryan are both originally from South Florida, they met at 4Geeks programming
-							academy in downtown, Miami. Each had a purpose to refine their knowledge in computer
-							software and programming. Along the way, several momentous occasions later, they soon
-							discovered they had shared interests in clean eating, and explored the opportunity to
-							develop a startup right here in our backyard. Tying together all that they have accrued
-							along the way, incorporating modern technology with early nomadic principality. Their
-							message is to inspire healthier communities by engaging people to harvest and benefit from
+							Trenton and Ryan are both originally from South Florida, and they met at 4Geeks Academy in
+							downtown Miami. They had a desire to expand their knowledge in computer software and
+							programming. Along the way, several momentous occasions later, they soon discovered they had
+							shared interests in clean eating, and explored the opportunity to develop a startup right in
+							their backyards. Tying together all that they have accrued along the way, they incorporated
+							modern technology with the early human necessity to thrive from the land. Their message is
+							to inspire healthier communities by engaging people to cultivate and benefit from
 							microgreens, herbs, vegetables, and fruits! At Lettus our mission is positioned to align
-							with your values from large businesses to small recreationalist alike --
+							with your values from large businesses to small recreationalists alike --
 						</p>
 						<img
 							src="https://res.cloudinary.com/devryan/image/upload/v1573831460/projects/4geeks/soplslettusgrow_wvyo5v.png"

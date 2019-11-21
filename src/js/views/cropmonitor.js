@@ -33,7 +33,7 @@ export const Cropmonitor = props => {
 		<>
 			<div className="mt-5">
 				<div className="text-center bg-dark text-light mt-4">
-					<h1>Crop Monitor ({plant})</h1>
+					<h1>{plant} </h1>
 				</div>
 				<table className="table table-dark text-light text-center">
 					<thead>
@@ -73,7 +73,7 @@ export const Cropmonitor = props => {
 								<RadialGauge
 									units="pH"
 									title="pH Value"
-									value={0}
+									value={6.5}
 									colorUnits={"red"}
 									minValue={0}
 									maxValue={14}

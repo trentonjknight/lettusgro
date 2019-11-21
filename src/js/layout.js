@@ -8,7 +8,6 @@ import { Login } from "./views/login";
 import { Plants } from "./views/plants";
 import { Singlecrop } from "./views/singlecrop";
 import { Cropmonitor } from "./views/cropmonitor";
-import Selection from "./views/plantselection";
 import Register from "./views/register";
 import { About } from "./views/about";
 import injectContext from "./store/appContext";
@@ -36,11 +35,9 @@ export const Layout = () => {
 						<Route path="/plants" component={Plants} />
 						<Route path="/details/:theid" component={Singlecrop} />
 						<Route path="/cropmonitor/:index" component={Cropmonitor} />
-						<Route path="/selection/:id" component={Selection} />
 						<Route path="/register" component={Register} />
 						<Route path="/about" component={About} />
 						<Route path="/progress" component={Progressbar} />
-						{/* <Route path="/smooth" component={Smoothscroll} /> */}
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Footer />
