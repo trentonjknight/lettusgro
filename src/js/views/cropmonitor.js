@@ -225,6 +225,9 @@ export const Cropmonitor = props => {
 				<Link to="/plants">
 					<button className="btn btn-success">Back to plants</button>
 				</Link>
+				<Link to="/history">
+					<button className="btn btn-success m-1">History</button>
+				</Link>
 			</div>
 		</>
 	);

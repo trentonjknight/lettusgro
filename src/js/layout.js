@@ -11,6 +11,7 @@ import { Cropmonitor } from "./views/cropmonitor";
 import Register from "./views/register";
 import { About } from "./views/about";
 import injectContext from "./store/appContext";
+import History from "./views/history";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -38,6 +39,7 @@ export const Layout = () => {
 						<Route path="/register" component={Register} />
 						<Route path="/about" component={About} />
 						<Route path="/progress" component={Progressbar} />
+						<Route path="/history" component={History} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Footer />
